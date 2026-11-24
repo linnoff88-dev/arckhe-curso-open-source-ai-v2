@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="inema-course" content="open-source-ai-command-center-v2">
+  <meta name="ARCKHÉ-course" content="open-source-ai-command-center-v2">
   <script>
 (function () {
   try {
     var html = document.documentElement;
-    var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+    var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
     function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
     var p = clone(DEF);
     try {
-      var raw = localStorage.getItem('inema.prefs');
+      var raw = localStorage.getItem('ARCKHÉ.prefs');
       if (raw) {
         var parsed = JSON.parse(raw);
         if (parsed && typeof parsed === 'object') {
@@ -21,17 +21,17 @@
       } else {
         var legacy = localStorage.getItem('theme');
         if (legacy === 'light') p.theme = 'claro';
-        else if (legacy === 'dark') p.theme = 'inema-dark';
+        else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
       }
     } catch (e) { p = clone(DEF); }
     var THEMES = {
-      'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+      'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
       'claro':      { dark: false, attr: null,        cs: 'light' },
       'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
       'foco':       { dark: null,  attr: 'foco',      cs: null    },
       'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
     };
-    var t = THEMES[p.theme] || THEMES['inema-dark'];
+    var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
     if (t.dark === true) html.classList.add('dark');
     else if (t.dark === false) html.classList.remove('dark');
     if (t.attr) html.setAttribute('data-theme', t.attr);
@@ -41,7 +41,7 @@
     html.setAttribute('data-accent', p.accent || 'emerald');
     var s = html.style;
     var scale = (+p.fontScale || 100);
-    s.setProperty('--inema-font-scale', (scale / 100).toString());
+    s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
     s.setProperty('font-size', scale + '%');
     s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
     s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -79,7 +79,7 @@
       }
     }
   </script>
-  <script type="application/json" data-inema-manifest>
+  <script type="application/json" data-ARCKHÉ-manifest>
 {
   "course": "open-source-ai-command-center-v2",
   "tracks": [
@@ -121,7 +121,7 @@
     },
     {
       "n": "4",
-      "title": "Operação",
+      "title": "OperaÃ§Ã£o",
       "modules": [
         {
           "id": "4-1",
@@ -239,23 +239,23 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 }
 .module-shell { scroll-margin-top: 5rem; }
 .topic-section { scroll-margin-top: 5rem; }
-.course-meter .inema-bar { margin-top: .75rem; }
+.course-meter .ARCKHÉ-bar { margin-top: .75rem; }
   </style>
   <link rel="stylesheet" href="../../assets/learn.css">
   
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
   <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-wrap justify-between items-center min-h-14 gap-3 py-2">
       <div class="flex items-center space-x-4 min-w-0">
         <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
-          <span class="text-2xl">🧠</span>
+          <span class="text-2xl">ðŸ§ </span>
           <span class="font-bold text-lg hidden sm:inline">IA Open Source</span>
         </a>
         <span class="text-neutral-600">|</span>
-        <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+        <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
       </div>
       <div class="flex items-center gap-1 sm:gap-2">
         <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors">
@@ -272,69 +272,69 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
       </a>
 <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors">
         <span class="sm:hidden">T4</span>
-        <span class="hidden sm:inline">Operação</span>
+        <span class="hidden sm:inline">OperaÃ§Ã£o</span>
       </a>
-        <button type="button" data-inema-journey-open class="inline-flex items-center gap-2 px-2 sm:px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors">
-          <span aria-hidden="true">◷</span>
+        <button type="button" data-ARCKHÉ-journey-open class="inline-flex items-center gap-2 px-2 sm:px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors">
+          <span aria-hidden="true">â—·</span>
           <span class="hidden lg:inline">Minha jornada</span>
-          <span class="inema-journey-badge hidden" data-inema-journey-badge data-count="0" aria-hidden="true"></span>
+          <span class="ARCKHÉ-journey-badge hidden" data-ARCKHÉ-journey-badge data-count="0" aria-hidden="true"></span>
         </button>
         <div class="relative">
-          <button type="button" class="inema-appearance-trigger" data-inema-appearance-toggle="[data-inema-appearance]" aria-expanded="false" aria-label="Aparência">
-            <span aria-hidden="true">◑</span>
-            <span class="hidden lg:inline">Aparência</span>
+          <button type="button" class="ARCKHÉ-appearance-trigger" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" aria-expanded="false" aria-label="AparÃªncia">
+            <span aria-hidden="true">â—‘</span>
+            <span class="hidden lg:inline">AparÃªncia</span>
           </button>
-          <div data-inema-appearance class="inema-appearance-pop right-0">
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Tema</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-theme="inema-dark">Escuro</button>
-      <button type="button" data-inema-set-theme="claro">Claro</button>
-      <button type="button" data-inema-set-theme="sepia">Sépia</button>
-      <button type="button" data-inema-set-theme="foco">Foco</button>
-      <button type="button" data-inema-set-theme="contraste">Contraste</button>
+          <div data-ARCKHÉ-appearance class="ARCKHÉ-appearance-pop right-0">
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Tema</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
+      <button type="button" data-ARCKHÉ-set-theme="claro">Claro</button>
+      <button type="button" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
+      <button type="button" data-ARCKHÉ-set-theme="foco">Foco</button>
+      <button type="button" data-ARCKHÉ-set-theme="contraste">Contraste</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Fonte</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-font="inter">Inter</button>
-      <button type="button" data-inema-set-font="system">Sistema</button>
-      <button type="button" data-inema-set-font="leitura">Leitura</button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Fonte</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-font="inter">Inter</button>
+      <button type="button" data-ARCKHÉ-set-font="system">Sistema</button>
+      <button type="button" data-ARCKHÉ-set-font="leitura">Leitura</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Texto</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-fontscale="100">A</button>
-      <button type="button" data-inema-set-fontscale="112">A+</button>
-      <button type="button" data-inema-set-fontscale="125">A++</button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Texto</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-fontscale="100">A</button>
+      <button type="button" data-ARCKHÉ-set-fontscale="112">A+</button>
+      <button type="button" data-ARCKHÉ-set-fontscale="125">A++</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Linha</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-linewidth="60">60</button>
-      <button type="button" data-inema-set-linewidth="68">68</button>
-      <button type="button" data-inema-set-linewidth="75">75</button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Linha</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-linewidth="60">60</button>
+      <button type="button" data-ARCKHÉ-set-linewidth="68">68</button>
+      <button type="button" data-ARCKHÉ-set-linewidth="75">75</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Entrelinha</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-leading="1.45">Compacta</button>
-      <button type="button" data-inema-set-leading="1.7">Confortável</button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Entrelinha</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-leading="1.45">Compacta</button>
+      <button type="button" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Acento</span>
-    <div class="inema-accent-grid">
-      <button type="button" data-inema-set-accent="emerald" data-accent="emerald" aria-label="Acento emerald"></button>
-<button type="button" data-inema-set-accent="blue" data-accent="blue" aria-label="Acento blue"></button>
-<button type="button" data-inema-set-accent="purple" data-accent="purple" aria-label="Acento purple"></button>
-<button type="button" data-inema-set-accent="amber" data-accent="amber" aria-label="Acento amber"></button>
-<button type="button" data-inema-set-accent="teal" data-accent="teal" aria-label="Acento teal"></button>
-<button type="button" data-inema-set-accent="rose" data-accent="rose" aria-label="Acento rose"></button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Acento</span>
+    <div class="ARCKHÉ-accent-grid">
+      <button type="button" data-ARCKHÉ-set-accent="emerald" data-accent="emerald" aria-label="Acento emerald"></button>
+<button type="button" data-ARCKHÉ-set-accent="blue" data-accent="blue" aria-label="Acento blue"></button>
+<button type="button" data-ARCKHÉ-set-accent="purple" data-accent="purple" aria-label="Acento purple"></button>
+<button type="button" data-ARCKHÉ-set-accent="amber" data-accent="amber" aria-label="Acento amber"></button>
+<button type="button" data-ARCKHÉ-set-accent="teal" data-accent="teal" aria-label="Acento teal"></button>
+<button type="button" data-ARCKHÉ-set-accent="rose" data-accent="rose" aria-label="Acento rose"></button>
     </div>
   </div>
 </div>
@@ -351,26 +351,26 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     </div>
   </div>
 </nav>
-  <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-inema-track="3">
+  <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-track="3">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">TRILHA 3</span>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4">🖥️ Stack Local</h1>
-    <p class="text-lg text-neutral-400 max-w-3xl">Transforme Ollama, Open WebUI, documentos, agentes e automações em um command center utilizável no navegador.</p>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ–¥ï¸ Stack Local</h1>
+    <p class="text-lg text-neutral-400 max-w-3xl">Transforme Ollama, Open WebUI, documentos, agentes e automaÃ§Ãµes em um command center utilizÃ¡vel no navegador.</p>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-3xl">
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">1</div><div class="text-xs text-neutral-400">Módulo</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">75 min</div><div class="text-xs text-neutral-400">Duração</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Mão na massa</div><div class="text-xs text-neutral-400">Nível</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">1</div><div class="text-xs text-neutral-400">MÃ³dulo</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">75 min</div><div class="text-xs text-neutral-400">DuraÃ§Ã£o</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">MÃ£o na massa</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
     </div>
-    <div class="mt-8 max-w-xl"><div data-inema-meter="trilha:3" class="course-meter p-5 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso da trilha 3">
+    <div class="mt-8 max-w-xl"><div data-ARCKHÉ-meter="trilha:3" class="course-meter p-5 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso da trilha 3">
   <div class="flex items-center justify-between gap-4">
     <span class="text-sm text-neutral-400">Progresso da trilha 3</span>
-    <span class="text-sm font-semibold text-primary" data-inema-meter-pct>0%</span>
+    <span class="text-sm font-semibold text-primary" data-ARCKHÉ-meter-pct>0%</span>
   </div>
   <div class="flex items-center justify-between gap-4 mt-1">
-    <span class="text-xs text-neutral-500" data-inema-meter-frac>0 de 0</span>
+    <span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac>0 de 0</span>
   </div>
-  <div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill></div></div>
+  <div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill></div></div>
 </div></div>
   </div>
 </header>
@@ -407,7 +407,7 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
     <g class="wf-a"><rect x="455" y="54" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="75" text-anchor="middle" fill="#bfe6ff">chat</text></g>
     <g class="wf-a"><rect x="455" y="114" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="135" text-anchor="middle" fill="#bfe6ff">tarefas</text></g>
-    <g class="wf-a"><rect x="455" y="174" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="195" text-anchor="middle" fill="#bfe6ff">automação</text></g>
+    <g class="wf-a"><rect x="455" y="174" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="195" text-anchor="middle" fill="#bfe6ff">automaÃ§Ã£o</text></g>
   </g>
   <g filter="url(#svg-trilha3-glow)"><rect x="800" y="92" width="156" height="76" rx="14" fill="#1a1230" stroke="url(#svg-trilha3-grad)" stroke-width="2"/></g>
   <text x="878" y="124" text-anchor="middle" fill="#c084fc" font-family="Inter,sans-serif" font-weight="600" font-size="18">painel local</text>
@@ -422,36 +422,36 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
         <span class="text-purple-400 font-bold text-sm">3.1</span>
         <span class="text-xs text-neutral-500">~75 min</span>
       </div>
-      <h3 class="font-semibold mb-1 group-hover:text-purple-400 transition-colors">🧰 Monte o painel local</h3>
+      <h3 class="font-semibold mb-1 group-hover:text-purple-400 transition-colors">ðŸ§° Monte o painel local</h3>
       <p class="text-xs text-neutral-400">Painel produtivo</p>
     </a>
   </div>
 </section>
   <h2 class="text-2xl font-bold mb-6">Conteudo detalhado</h2>
-  <article id="modulo-3-1" data-inema-module="3-1" data-inema-track="3" class="module-shell bg-dark-800 rounded-xl border border-dark-600 mb-6">
+  <article id="modulo-3-1" data-ARCKHÉ-module="3-1" data-ARCKHÉ-track="3" class="module-shell bg-dark-800 rounded-xl border border-dark-600 mb-6">
   <div class="p-6 border-b border-dark-600">
     <div class="flex items-center justify-between mb-2">
       <span class="text-purple-400 font-bold">3.1</span>
       <span class="text-xs text-neutral-500">~75 min</span>
     </div>
-    <h3 class="text-2xl font-bold mb-2">🧰 Monte o painel local</h3>
-    <p class="text-neutral-400 text-sm">Transforme Ollama, Open WebUI, documentos, agentes e automações em um command center utilizável no navegador.</p>
-    <div class="mt-5 max-w-md"><div data-inema-meter="modulo:3-1" class="course-meter p-4 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso do módulo 3.1">
+    <h3 class="text-2xl font-bold mb-2">ðŸ§° Monte o painel local</h3>
+    <p class="text-neutral-400 text-sm">Transforme Ollama, Open WebUI, documentos, agentes e automaÃ§Ãµes em um command center utilizÃ¡vel no navegador.</p>
+    <div class="mt-5 max-w-md"><div data-ARCKHÉ-meter="modulo:3-1" class="course-meter p-4 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso do mÃ³dulo 3.1">
   <div class="flex items-center justify-between gap-4">
-    <span class="text-sm text-neutral-400">Progresso do módulo 3.1</span>
-    <span class="text-sm font-semibold text-primary" data-inema-meter-pct>0%</span>
+    <span class="text-sm text-neutral-400">Progresso do mÃ³dulo 3.1</span>
+    <span class="text-sm font-semibold text-primary" data-ARCKHÉ-meter-pct>0%</span>
   </div>
   <div class="flex items-center justify-between gap-4 mt-1">
-    <span class="text-xs text-neutral-500" data-inema-meter-frac>0 de 0</span>
+    <span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac>0 de 0</span>
   </div>
-  <div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill></div></div>
+  <div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill></div></div>
 </div></div>
   </div>
   <div class="divide-y divide-dark-600">
-    <div class="topic-item" data-inema-topic="modulo-3-1#topico-1">
+    <div class="topic-item" data-ARCKHÉ-topic="modulo-3-1#topico-1">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-3-1-1" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-    <span class="text-lg">🎯</span>
+    <span class="text-lg">ðŸŽ¯</span>
     <div>
       <span class="font-medium">Instale o runtime de modelos</span>
       <span class="text-neutral-500 text-sm ml-2">- Ollama como base</span>
@@ -461,23 +461,23 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-purple-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">Pense no runtime como o motor. A interface de chat, o RAG e as automações conversam com ele em vez de falar diretamente com cada arquivo de modelo.</p>
+        <p class="text-neutral-300 text-sm">Pense no runtime como o motor. A interface de chat, o RAG e as automaÃ§Ãµes conversam com ele em vez de falar diretamente com cada arquivo de modelo.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Isso reduz fricção e facilita trocar modelos. Você aprende um fluxo operacional e reaproveita em várias interfaces.</p>
+        <p class="text-neutral-300 text-sm">Isso reduz fricÃ§Ã£o e facilita trocar modelos. VocÃª aprende um fluxo operacional e reaproveita em vÃ¡rias interfaces.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Runtime · Pull · Serve · API local</p>
+        <p class="text-neutral-300 text-sm">Runtime Â· Pull Â· Serve Â· API local</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-inema-topic="modulo-3-1#topico-2">
+<div class="topic-item" data-ARCKHÉ-topic="modulo-3-1#topico-2">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-3-1-2" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-    <span class="text-lg">⚖️</span>
+    <span class="text-lg">âš–ï¸</span>
     <div>
       <span class="font-medium">Use Open WebUI como cockpit</span>
       <span class="text-neutral-500 text-sm ml-2">- Chat familiar</span>
@@ -491,19 +491,19 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Dois anos atrás, muito disso exigia montar peças manualmente. Hoje você pode começar com uma UI pronta e evoluir por módulos.</p>
+        <p class="text-neutral-300 text-sm">Dois anos atrÃ¡s, muito disso exigia montar peÃ§as manualmente. Hoje vocÃª pode comeÃ§ar com uma UI pronta e evoluir por mÃ³dulos.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Chat · Upload · Histórico · Seleção de modelo</p>
+        <p class="text-neutral-300 text-sm">Chat Â· Upload Â· HistÃ³rico Â· SeleÃ§Ã£o de modelo</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-inema-topic="modulo-3-1#topico-3">
+<div class="topic-item" data-ARCKHÉ-topic="modulo-3-1#topico-3">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-3-1-3" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-    <span class="text-lg">🧩</span>
+    <span class="text-lg">ðŸ§©</span>
     <div>
       <span class="font-medium">Adicione documentos com RAG</span>
       <span class="text-neutral-500 text-sm ml-2">- Perguntas sobre arquivos</span>
@@ -513,7 +513,7 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-purple-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">O ganho vem de preparação: bons documentos, chunks razoáveis, embeddings adequados e instruções claras para citar a fonte interna.</p>
+        <p class="text-neutral-300 text-sm">O ganho vem de preparaÃ§Ã£o: bons documentos, chunks razoÃ¡veis, embeddings adequados e instruÃ§Ãµes claras para citar a fonte interna.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Por que aprender:</span>
@@ -521,15 +521,15 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Chunks · Embeddings · Busca · Citação interna</p>
+        <p class="text-neutral-300 text-sm">Chunks Â· Embeddings Â· Busca Â· CitaÃ§Ã£o interna</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-inema-topic="modulo-3-1#topico-4">
+<div class="topic-item" data-ARCKHÉ-topic="modulo-3-1#topico-4">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-3-1-4" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-    <span class="text-lg">🧪</span>
+    <span class="text-lg">ðŸ§ª</span>
     <div>
       <span class="font-medium">Conecte agentes prontos</span>
       <span class="text-neutral-500 text-sm ml-2">- Hermes e tarefas</span>
@@ -539,23 +539,23 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-purple-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">O agente não é magia. É uma combinação de prompt, ferramenta, memória de curto prazo e política de execução.</p>
+        <p class="text-neutral-300 text-sm">O agente nÃ£o Ã© magia. Ã‰ uma combinaÃ§Ã£o de prompt, ferramenta, memÃ³ria de curto prazo e polÃ­tica de execuÃ§Ã£o.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Quando você limita escopo, aumenta previsibilidade. Agentes locais ficam úteis antes de ficarem ambiciosos.</p>
+        <p class="text-neutral-300 text-sm">Quando vocÃª limita escopo, aumenta previsibilidade. Agentes locais ficam Ãºteis antes de ficarem ambiciosos.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Ferramentas · Escopo · Execução · Previsibilidade</p>
+        <p class="text-neutral-300 text-sm">Ferramentas Â· Escopo Â· ExecuÃ§Ã£o Â· Previsibilidade</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-inema-topic="modulo-3-1#topico-5">
+<div class="topic-item" data-ARCKHÉ-topic="modulo-3-1#topico-5">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-3-1-5" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-    <span class="text-lg">🔁</span>
+    <span class="text-lg">ðŸ”</span>
     <div>
       <span class="font-medium">Automatize com n8n local</span>
       <span class="text-neutral-500 text-sm ml-2">- Fluxos sem SaaS</span>
@@ -565,41 +565,41 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-purple-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">O modelo vira um nó no fluxo. Ele recebe entrada estruturada e devolve saída para o próximo passo.</p>
+        <p class="text-neutral-300 text-sm">O modelo vira um nÃ³ no fluxo. Ele recebe entrada estruturada e devolve saÃ­da para o prÃ³ximo passo.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Isso tira IA do chat isolado e coloca no processo. O resultado é repetível, auditável e mais fácil de manter.</p>
+        <p class="text-neutral-300 text-sm">Isso tira IA do chat isolado e coloca no processo. O resultado Ã© repetÃ­vel, auditÃ¡vel e mais fÃ¡cil de manter.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Workflow · Webhook · Nós · Auditoria</p>
+        <p class="text-neutral-300 text-sm">Workflow Â· Webhook Â· NÃ³s Â· Auditoria</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-inema-topic="modulo-3-1#topico-6">
+<div class="topic-item" data-ARCKHÉ-topic="modulo-3-1#topico-6">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-3-1-6" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-    <span class="text-lg">✅</span>
+    <span class="text-lg">âœ…</span>
     <div>
       <span class="font-medium">Construa um dashboard simples</span>
-      <span class="text-neutral-500 text-sm ml-2">- CPU, memória e contexto</span>
+      <span class="text-neutral-500 text-sm ml-2">- CPU, memÃ³ria e contexto</span>
     </div>
   </button>
   <div id="painel-3-1-6" class="topic-explanation px-6 pb-4">
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-purple-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">O painel não é decoração. Ele responde se a máquina está saudável, se o modelo cabe e se a latência vem de hardware, contexto ou fila.</p>
+        <p class="text-neutral-300 text-sm">O painel nÃ£o Ã© decoraÃ§Ã£o. Ele responde se a mÃ¡quina estÃ¡ saudÃ¡vel, se o modelo cabe e se a latÃªncia vem de hardware, contexto ou fila.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Sem observabilidade, qualquer lentidão vira mistério. Com métricas simples, você sabe onde mexer.</p>
+        <p class="text-neutral-300 text-sm">Sem observabilidade, qualquer lentidÃ£o vira mistÃ©rio. Com mÃ©tricas simples, vocÃª sabe onde mexer.</p>
       </div>
       <div>
         <span class="text-purple-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">CPU · Memória · Contexto · Fila</p>
+        <p class="text-neutral-300 text-sm">CPU Â· MemÃ³ria Â· Contexto Â· Fila</p>
       </div>
     </div>
   </div>
@@ -613,7 +613,7 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   <div class="flex justify-start gap-4 mt-10">
     <a href="../trilha2/index.html" class="px-5 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">Trilha anterior</a>
 <a href="../../index.html" class="px-5 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">Voltar ao curso</a>
-<a href="../trilha4/index.html" class="px-5 py-3 bg-amber-500/20 text-amber-400 border border-amber-500/30 rounded-lg font-semibold hover:bg-amber-500/30 transition-colors">Próxima trilha</a>
+<a href="../trilha4/index.html" class="px-5 py-3 bg-amber-500/20 text-amber-400 border border-amber-500/30 rounded-lg font-semibold hover:bg-amber-500/30 transition-colors">PrÃ³xima trilha</a>
   </div>
 </main>
 <div id="modal-3-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target === this) closeModal()">
@@ -638,7 +638,7 @@ function toggleTopic(button) {
   var panelId = button.getAttribute('aria-controls');
   var explanation = panelId ? document.getElementById(panelId) : null;
   if (!explanation) return;
-  var moduleCard = button.closest('[data-inema-module]') || button.closest('.module-shell') || document;
+  var moduleCard = button.closest('[data-ARCKHÉ-module]') || button.closest('.module-shell') || document;
   moduleCard.querySelectorAll('.topic-explanation.active').forEach(function (exp) {
     if (exp !== explanation) {
       exp.classList.remove('active');
@@ -671,24 +671,24 @@ document.addEventListener('keydown', function (e) {
 </script>
 <script src="../../assets/learn.js"></script>
 <script>
-if (window.INEMA && typeof window.INEMA.init === 'function') {
-  window.INEMA.init();
+if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+  window.ARCKHÉ.init();
 }
 document.addEventListener('click', function (e) {
   var t = e.target;
   if (!t || !t.closest) return;
   var nav = t.closest('nav');
   if (!nav) return;
-  var journey = t.closest('[data-inema-journey-open]');
-  if (journey && window.INEMA && INEMA.openJourney) {
+  var journey = t.closest('[data-ARCKHÉ-journey-open]');
+  if (journey && window.ARCKHÉ && ARCKHÉ.openJourney) {
     e.preventDefault();
-    INEMA.openJourney();
+    ARCKHÉ.openJourney();
     return;
   }
-  var toggle = t.closest('[data-inema-appearance-toggle]');
+  var toggle = t.closest('[data-ARCKHÉ-appearance-toggle]');
   if (toggle) {
-    var targetSel = toggle.getAttribute('data-inema-appearance-toggle');
-    var panel = targetSel ? document.querySelector(targetSel) : document.querySelector('[data-inema-appearance]');
+    var targetSel = toggle.getAttribute('data-ARCKHÉ-appearance-toggle');
+    var panel = targetSel ? document.querySelector(targetSel) : document.querySelector('[data-ARCKHÉ-appearance]');
     if (panel) {
       var open = panel.getAttribute('data-open') !== 'true';
       panel.setAttribute('data-open', open ? 'true' : 'false');
@@ -697,29 +697,29 @@ document.addEventListener('click', function (e) {
     return;
   }
   var pairs = [
-    ['data-inema-set-theme', 'theme'],
-    ['data-inema-set-font', 'font'],
-    ['data-inema-set-fontscale', 'fontScale'],
-    ['data-inema-set-linewidth', 'lineWidth'],
-    ['data-inema-set-leading', 'leading'],
-    ['data-inema-set-accent', 'accent']
+    ['data-ARCKHÉ-set-theme', 'theme'],
+    ['data-ARCKHÉ-set-font', 'font'],
+    ['data-ARCKHÉ-set-fontscale', 'fontScale'],
+    ['data-ARCKHÉ-set-linewidth', 'lineWidth'],
+    ['data-ARCKHÉ-set-leading', 'leading'],
+    ['data-ARCKHÉ-set-accent', 'accent']
   ];
   for (var i = 0; i < pairs.length; i++) {
     var btn = t.closest('[' + pairs[i][0] + ']');
-    if (btn && window.INEMA && INEMA.setPref) {
+    if (btn && window.ARCKHÉ && ARCKHÉ.setPref) {
       var raw = btn.getAttribute(pairs[i][0]);
       var key = pairs[i][1];
       var value = key === 'fontScale' || key === 'lineWidth' ? parseInt(raw, 10) : (key === 'leading' ? parseFloat(raw) : raw);
-      INEMA.setPref(key, value);
+      ARCKHÉ.setPref(key, value);
       return;
     }
   }
   var theme = t.closest('#theme-toggle');
   if (theme) {
     var html = document.documentElement;
-    var next = html.classList.contains('dark') ? 'claro' : 'inema-dark';
-    if (window.INEMA && INEMA.setPref) {
-      INEMA.setPref('theme', next);
+    var next = html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark';
+    if (window.ARCKHÉ && ARCKHÉ.setPref) {
+      ARCKHÉ.setPref('theme', next);
     } else {
       html.classList.toggle('dark');
       localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');

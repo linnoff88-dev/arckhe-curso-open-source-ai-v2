@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="inema-course" content="open-source-ai-command-center-v2">
+  <meta name="ARCKHÉ-course" content="open-source-ai-command-center-v2">
   <script>
 (function () {
   try {
     var html = document.documentElement;
-    var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+    var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
     function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
     var p = clone(DEF);
     try {
-      var raw = localStorage.getItem('inema.prefs');
+      var raw = localStorage.getItem('ARCKHÉ.prefs');
       if (raw) {
         var parsed = JSON.parse(raw);
         if (parsed && typeof parsed === 'object') {
@@ -21,17 +21,17 @@
       } else {
         var legacy = localStorage.getItem('theme');
         if (legacy === 'light') p.theme = 'claro';
-        else if (legacy === 'dark') p.theme = 'inema-dark';
+        else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
       }
     } catch (e) { p = clone(DEF); }
     var THEMES = {
-      'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+      'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
       'claro':      { dark: false, attr: null,        cs: 'light' },
       'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
       'foco':       { dark: null,  attr: 'foco',      cs: null    },
       'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
     };
-    var t = THEMES[p.theme] || THEMES['inema-dark'];
+    var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
     if (t.dark === true) html.classList.add('dark');
     else if (t.dark === false) html.classList.remove('dark');
     if (t.attr) html.setAttribute('data-theme', t.attr);
@@ -41,7 +41,7 @@
     html.setAttribute('data-accent', p.accent || 'emerald');
     var s = html.style;
     var scale = (+p.fontScale || 100);
-    s.setProperty('--inema-font-scale', (scale / 100).toString());
+    s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
     s.setProperty('font-size', scale + '%');
     s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
     s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -79,7 +79,7 @@
       }
     }
   </script>
-  <script type="application/json" data-inema-manifest>
+  <script type="application/json" data-ARCKHÉ-manifest>
 {
   "course": "open-source-ai-command-center-v2",
   "tracks": [
@@ -121,7 +121,7 @@
     },
     {
       "n": "4",
-      "title": "Operação",
+      "title": "OperaÃ§Ã£o",
       "modules": [
         {
           "id": "4-1",
@@ -135,7 +135,7 @@
 }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <title>Módulo 3.1: Monte o painel local | Command Center de IA Open Source</title>
+  <title>MÃ³dulo 3.1: Monte o painel local | Command Center de IA Open Source</title>
   <style>
 body { font-family: 'Inter', sans-serif; }
 .dark body { background-color: #111827; }
@@ -239,23 +239,23 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 }
 .module-shell { scroll-margin-top: 5rem; }
 .topic-section { scroll-margin-top: 5rem; }
-.course-meter .inema-bar { margin-top: .75rem; }
+.course-meter .ARCKHÉ-bar { margin-top: .75rem; }
   </style>
   <link rel="stylesheet" href="../../assets/learn.css">
   
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
   <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-wrap justify-between items-center min-h-14 gap-3 py-2">
       <div class="flex items-center space-x-4 min-w-0">
         <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
-          <span class="text-2xl">🧠</span>
+          <span class="text-2xl">ðŸ§ </span>
           <span class="font-bold text-lg hidden sm:inline">IA Open Source</span>
         </a>
         <span class="text-neutral-600">|</span>
-        <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+        <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
       </div>
       <div class="flex items-center gap-1 sm:gap-2">
         <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors">
@@ -272,69 +272,69 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
       </a>
 <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors">
         <span class="sm:hidden">T4</span>
-        <span class="hidden sm:inline">Operação</span>
+        <span class="hidden sm:inline">OperaÃ§Ã£o</span>
       </a>
-        <button type="button" data-inema-journey-open class="inline-flex items-center gap-2 px-2 sm:px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors">
-          <span aria-hidden="true">◷</span>
+        <button type="button" data-ARCKHÉ-journey-open class="inline-flex items-center gap-2 px-2 sm:px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors">
+          <span aria-hidden="true">â—·</span>
           <span class="hidden lg:inline">Minha jornada</span>
-          <span class="inema-journey-badge hidden" data-inema-journey-badge data-count="0" aria-hidden="true"></span>
+          <span class="ARCKHÉ-journey-badge hidden" data-ARCKHÉ-journey-badge data-count="0" aria-hidden="true"></span>
         </button>
         <div class="relative">
-          <button type="button" class="inema-appearance-trigger" data-inema-appearance-toggle="[data-inema-appearance]" aria-expanded="false" aria-label="Aparência">
-            <span aria-hidden="true">◑</span>
-            <span class="hidden lg:inline">Aparência</span>
+          <button type="button" class="ARCKHÉ-appearance-trigger" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" aria-expanded="false" aria-label="AparÃªncia">
+            <span aria-hidden="true">â—‘</span>
+            <span class="hidden lg:inline">AparÃªncia</span>
           </button>
-          <div data-inema-appearance class="inema-appearance-pop right-0">
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Tema</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-theme="inema-dark">Escuro</button>
-      <button type="button" data-inema-set-theme="claro">Claro</button>
-      <button type="button" data-inema-set-theme="sepia">Sépia</button>
-      <button type="button" data-inema-set-theme="foco">Foco</button>
-      <button type="button" data-inema-set-theme="contraste">Contraste</button>
+          <div data-ARCKHÉ-appearance class="ARCKHÉ-appearance-pop right-0">
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Tema</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
+      <button type="button" data-ARCKHÉ-set-theme="claro">Claro</button>
+      <button type="button" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
+      <button type="button" data-ARCKHÉ-set-theme="foco">Foco</button>
+      <button type="button" data-ARCKHÉ-set-theme="contraste">Contraste</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Fonte</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-font="inter">Inter</button>
-      <button type="button" data-inema-set-font="system">Sistema</button>
-      <button type="button" data-inema-set-font="leitura">Leitura</button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Fonte</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-font="inter">Inter</button>
+      <button type="button" data-ARCKHÉ-set-font="system">Sistema</button>
+      <button type="button" data-ARCKHÉ-set-font="leitura">Leitura</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Texto</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-fontscale="100">A</button>
-      <button type="button" data-inema-set-fontscale="112">A+</button>
-      <button type="button" data-inema-set-fontscale="125">A++</button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Texto</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-fontscale="100">A</button>
+      <button type="button" data-ARCKHÉ-set-fontscale="112">A+</button>
+      <button type="button" data-ARCKHÉ-set-fontscale="125">A++</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Linha</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-linewidth="60">60</button>
-      <button type="button" data-inema-set-linewidth="68">68</button>
-      <button type="button" data-inema-set-linewidth="75">75</button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Linha</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-linewidth="60">60</button>
+      <button type="button" data-ARCKHÉ-set-linewidth="68">68</button>
+      <button type="button" data-ARCKHÉ-set-linewidth="75">75</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Entrelinha</span>
-    <div class="inema-segment">
-      <button type="button" data-inema-set-leading="1.45">Compacta</button>
-      <button type="button" data-inema-set-leading="1.7">Confortável</button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Entrelinha</span>
+    <div class="ARCKHÉ-segment">
+      <button type="button" data-ARCKHÉ-set-leading="1.45">Compacta</button>
+      <button type="button" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
     </div>
   </div>
-  <div class="inema-pref-group">
-    <span class="inema-pref-group__label">Acento</span>
-    <div class="inema-accent-grid">
-      <button type="button" data-inema-set-accent="emerald" data-accent="emerald" aria-label="Acento emerald"></button>
-<button type="button" data-inema-set-accent="blue" data-accent="blue" aria-label="Acento blue"></button>
-<button type="button" data-inema-set-accent="purple" data-accent="purple" aria-label="Acento purple"></button>
-<button type="button" data-inema-set-accent="amber" data-accent="amber" aria-label="Acento amber"></button>
-<button type="button" data-inema-set-accent="teal" data-accent="teal" aria-label="Acento teal"></button>
-<button type="button" data-inema-set-accent="rose" data-accent="rose" aria-label="Acento rose"></button>
+  <div class="ARCKHÉ-pref-group">
+    <span class="ARCKHÉ-pref-group__label">Acento</span>
+    <div class="ARCKHÉ-accent-grid">
+      <button type="button" data-ARCKHÉ-set-accent="emerald" data-accent="emerald" aria-label="Acento emerald"></button>
+<button type="button" data-ARCKHÉ-set-accent="blue" data-accent="blue" aria-label="Acento blue"></button>
+<button type="button" data-ARCKHÉ-set-accent="purple" data-accent="purple" aria-label="Acento purple"></button>
+<button type="button" data-ARCKHÉ-set-accent="amber" data-accent="amber" aria-label="Acento amber"></button>
+<button type="button" data-ARCKHÉ-set-accent="teal" data-accent="teal" aria-label="Acento teal"></button>
+<button type="button" data-ARCKHÉ-set-accent="rose" data-accent="rose" aria-label="Acento rose"></button>
     </div>
   </div>
 </div>
@@ -363,43 +363,43 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-y border-dark-600">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MODULO 3.1</span>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4">🧰 Monte o painel local</h1>
-    <p class="text-lg text-neutral-400 max-w-3xl">Transforme Ollama, Open WebUI, documentos, agentes e automações em um command center utilizável no navegador.</p>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§° Monte o painel local</h1>
+    <p class="text-lg text-neutral-400 max-w-3xl">Transforme Ollama, Open WebUI, documentos, agentes e automaÃ§Ãµes em um command center utilizÃ¡vel no navegador.</p>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-3xl">
       <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Topicos</div></div>
       <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">75</div><div class="text-xs text-neutral-400">Minutos</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Mão na massa</div><div class="text-xs text-neutral-400">Nivel</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Implementação</div><div class="text-xs text-neutral-400">Tipo</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">MÃ£o na massa</div><div class="text-xs text-neutral-400">Nivel</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">ImplementaÃ§Ã£o</div><div class="text-xs text-neutral-400">Tipo</div></div>
     </div>
-    <div class="mt-8 max-w-xl"><div data-inema-meter="modulo:3-1" class="course-meter p-5 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso do módulo 3.1">
+    <div class="mt-8 max-w-xl"><div data-ARCKHÉ-meter="modulo:3-1" class="course-meter p-5 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso do mÃ³dulo 3.1">
   <div class="flex items-center justify-between gap-4">
-    <span class="text-sm text-neutral-400">Progresso do módulo 3.1</span>
-    <span class="text-sm font-semibold text-primary" data-inema-meter-pct>0%</span>
+    <span class="text-sm text-neutral-400">Progresso do mÃ³dulo 3.1</span>
+    <span class="text-sm font-semibold text-primary" data-ARCKHÉ-meter-pct>0%</span>
   </div>
   <div class="flex items-center justify-between gap-4 mt-1">
-    <span class="text-xs text-neutral-500" data-inema-meter-frac>0 de 0</span>
+    <span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac>0 de 0</span>
   </div>
-  <div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill></div></div>
+  <div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill></div></div>
 </div></div>
   </div>
 </header>
 <main id="conteudo" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <article id="modulo-3-1" data-inema-module="3-1" data-inema-track="3" class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-10">
-    <div class="inema-prose max-w-none">
-      <section id="topico-1" data-inema-topic="modulo-3-1#topico-1" class="topic-section mb-16">
+  <article id="modulo-3-1" data-ARCKHÉ-module="3-1" data-ARCKHÉ-track="3" class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-10">
+    <div class="ARCKHÉ-prose max-w-none">
+      <section id="topico-1" data-ARCKHÉ-topic="modulo-3-1#topico-1" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span>
-      <h2 class="text-2xl font-bold">🎯 Instale o runtime de modelos</h2>
+      <h2 class="text-2xl font-bold">ðŸŽ¯ Instale o runtime de modelos</h2>
     </div>
-    <button type="button" data-inema-doubt-toggle aria-pressed="false" title="Marcar dúvida neste tópico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t1-p1">O runtime é a camada que baixa, carrega e serve modelos localmente. Ollama virou uma porta de entrada simples porque padroniza comandos e expõe uma API local.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t1-p1">O runtime Ã© a camada que baixa, carrega e serve modelos localmente. Ollama virou uma porta de entrada simples porque padroniza comandos e expÃµe uma API local.</p>
   <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-8 overflow-hidden">
-<svg viewBox="0 0 1000 260" class="w-full h-auto" role="img" aria-label="Fluxo ilustrativo mostrando Dependência, decisão e autonomia">
+<svg viewBox="0 0 1000 260" class="w-full h-auto" role="img" aria-label="Fluxo ilustrativo mostrando DependÃªncia, decisÃ£o e autonomia">
   <defs>
     <linearGradient id="svg-311-grad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#a855f7"/>
@@ -425,12 +425,12 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <path d="M585,190 C700,190 730,130 800,130" marker-end="url(#svg-311-ahc)"/>
   </g>
   <g filter="url(#svg-311-glow)"><rect x="50" y="92" width="156" height="76" rx="14" fill="#1a1230" stroke="url(#svg-311-grad)" stroke-width="2"/></g>
-  <text x="128" y="124" text-anchor="middle" fill="#c084fc" font-family="Inter,sans-serif" font-weight="600" font-size="19">Dependência</text>
+  <text x="128" y="124" text-anchor="middle" fill="#c084fc" font-family="Inter,sans-serif" font-weight="600" font-size="19">DependÃªncia</text>
   <text x="128" y="146" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="12">ponto de partida</text>
   <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
     <g class="wf-a"><rect x="455" y="54" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="75" text-anchor="middle" fill="#bfe6ff">chat</text></g>
-    <g class="wf-a"><rect x="455" y="114" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="135" text-anchor="middle" fill="#bfe6ff">decisão</text></g>
-    <g class="wf-a"><rect x="455" y="174" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="195" text-anchor="middle" fill="#bfe6ff">automação</text></g>
+    <g class="wf-a"><rect x="455" y="114" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="135" text-anchor="middle" fill="#bfe6ff">decisÃ£o</text></g>
+    <g class="wf-a"><rect x="455" y="174" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="195" text-anchor="middle" fill="#bfe6ff">automaÃ§Ã£o</text></g>
   </g>
   <g filter="url(#svg-311-glow)"><rect x="800" y="92" width="156" height="76" rx="14" fill="#1a1230" stroke="url(#svg-311-grad)" stroke-width="2"/></g>
   <text x="878" y="124" text-anchor="middle" fill="#c084fc" font-family="Inter,sans-serif" font-weight="600" font-size="18">autonomia</text>
@@ -438,134 +438,134 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 </svg>
 </div>
   <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">◆</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-inema-block="m3-1-t1-p2">Pense no runtime como o motor. A interface de chat, o RAG e as automações conversam com ele em vez de falar diretamente com cada arquivo de modelo.</p>
+    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m3-1-t1-p2">Pense no runtime como o motor. A interface de chat, o RAG e as automaÃ§Ãµes conversam com ele em vez de falar diretamente com cada arquivo de modelo.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Runtime</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Pull</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Serve</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>API local</span></li>
+      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Runtime</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Pull</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Serve</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>API local</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">✦</span> Dica prática</h3>
-  <p class="text-neutral-300">Trate a IA local como laboratório primeiro. Só promova para rotina depois de um teste que você consiga repetir.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
+  <p class="text-neutral-300">Trate a IA local como laboratÃ³rio primeiro. SÃ³ promova para rotina depois de um teste que vocÃª consiga repetir.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Runtime</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Pull</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Serve</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">API local</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
-      <span class="inema-read-icon" aria-hidden="true">○</span>
-      <span data-inema-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
+      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
+      <span data-ARCKHÉ-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-2" data-inema-topic="modulo-3-1#topico-2" class="topic-section mb-16">
+<section id="topico-2" data-ARCKHÉ-topic="modulo-3-1#topico-2" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
-      <h2 class="text-2xl font-bold">⚖️ Use Open WebUI como cockpit</h2>
+      <h2 class="text-2xl font-bold">âš–ï¸ Use Open WebUI como cockpit</h2>
     </div>
-    <button type="button" data-inema-doubt-toggle aria-pressed="false" title="Marcar dúvida neste tópico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t2-p1">Open WebUI entrega a experiência parecida com ChatGPT ou Claude: conversas, upload de arquivos, seleção de modelos, histórico e controles de usuário.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t2-p1">Open WebUI entrega a experiÃªncia parecida com ChatGPT ou Claude: conversas, upload de arquivos, seleÃ§Ã£o de modelos, histÃ³rico e controles de usuÃ¡rio.</p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
   <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-    <h4 class="font-bold text-emerald-400 mb-4">✓ O que FAZER</h4>
+    <h4 class="font-bold text-emerald-400 mb-4">âœ“ O que FAZER</h4>
     <ul class="space-y-3 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Testar com tarefas reais antes de escolher ferramenta.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Registrar modelo, versão, quantização e motivo da decisão.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Separar dados sensíveis de prompts que podem sair da máquina.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Testar com tarefas reais antes de escolher ferramenta.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Registrar modelo, versÃ£o, quantizaÃ§Ã£o e motivo da decisÃ£o.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Separar dados sensÃ­veis de prompts que podem sair da mÃ¡quina.</span></li>
     </ul>
   </div>
   <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-    <h4 class="font-bold text-red-400 mb-4">✗ O que NAO fazer</h4>
+    <h4 class="font-bold text-red-400 mb-4">âœ— O que NAO fazer</h4>
     <ul class="space-y-3 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Trocar de stack só porque um ranking novo apareceu.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Confundir chat familiar com uma regra universal.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Rodar automações sem logs, rollback e limite de escopo.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Trocar de stack sÃ³ porque um ranking novo apareceu.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Confundir chat familiar com uma regra universal.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Rodar automaÃ§Ãµes sem logs, rollback e limite de escopo.</span></li>
     </ul>
   </div>
 </div>
   <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">◆</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-inema-block="m3-1-t2-p2">A interface importa porque reduz atrito. Se o ambiente parece familiar, a equipe testa mais e exige menos suporte.</p>
+    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m3-1-t2-p2">A interface importa porque reduz atrito. Se o ambiente parece familiar, a equipe testa mais e exige menos suporte.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Chat</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Upload</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Histórico</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Seleção de modelo</span></li>
+      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Chat</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Upload</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>HistÃ³rico</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>SeleÃ§Ã£o de modelo</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">✦</span> Dica prática</h3>
-  <p class="text-neutral-300">Se um modelo parece fraco, teste outra quantização antes de descartar a família inteira.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
+  <p class="text-neutral-300">Se um modelo parece fraco, teste outra quantizaÃ§Ã£o antes de descartar a famÃ­lia inteira.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Chat</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Upload</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-purple-400 font-semibold mb-1">Histórico</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <div class="text-purple-400 font-semibold mb-1">HistÃ³rico</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-purple-400 font-semibold mb-1">Seleção de modelo</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <div class="text-purple-400 font-semibold mb-1">SeleÃ§Ã£o de modelo</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
-      <span class="inema-read-icon" aria-hidden="true">○</span>
-      <span data-inema-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
+      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
+      <span data-ARCKHÉ-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-3" data-inema-topic="modulo-3-1#topico-3" class="topic-section mb-16">
+<section id="topico-3" data-ARCKHÉ-topic="modulo-3-1#topico-3" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
-      <h2 class="text-2xl font-bold">🧩 Adicione documentos com RAG</h2>
+      <h2 class="text-2xl font-bold">ðŸ§© Adicione documentos com RAG</h2>
     </div>
-    <button type="button" data-inema-doubt-toggle aria-pressed="false" title="Marcar dúvida neste tópico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t3-p1">RAG combina busca em documentos com geração de resposta. Em vez de jogar tudo no contexto, o sistema recupera trechos relevantes e passa ao modelo.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t3-p1">RAG combina busca em documentos com geraÃ§Ã£o de resposta. Em vez de jogar tudo no contexto, o sistema recupera trechos relevantes e passa ao modelo.</p>
   <div class="space-y-6 mb-6">
   <div class="flex items-start space-x-4">
     <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
     <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-      <h4 class="font-semibold text-white mb-2">Defina a tarefa mínima</h4>
+      <h4 class="font-semibold text-white mb-2">Defina a tarefa mÃ­nima</h4>
       <p class="text-sm text-neutral-400 mb-3">Etapa 1</p>
-      <p class="text-neutral-300 text-sm">Use evidência pequena e repetível. O objetivo é tomar uma decisão operacional, não provar que um modelo é perfeito.</p>
+      <p class="text-neutral-300 text-sm">Use evidÃªncia pequena e repetÃ­vel. O objetivo Ã© tomar uma decisÃ£o operacional, nÃ£o provar que um modelo Ã© perfeito.</p>
     </div>
   </div>
 <div class="flex items-start space-x-4">
@@ -573,289 +573,289 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
       <h4 class="font-semibold text-white mb-2">Escolha dois candidatos</h4>
       <p class="text-sm text-neutral-400 mb-3">Etapa 2</p>
-      <p class="text-neutral-300 text-sm">Use evidência pequena e repetível. O objetivo é tomar uma decisão operacional, não provar que um modelo é perfeito.</p>
+      <p class="text-neutral-300 text-sm">Use evidÃªncia pequena e repetÃ­vel. O objetivo Ã© tomar uma decisÃ£o operacional, nÃ£o provar que um modelo Ã© perfeito.</p>
     </div>
   </div>
 <div class="flex items-start space-x-4">
     <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">3</span></div>
     <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-      <h4 class="font-semibold text-white mb-2">Meça qualidade e custo</h4>
+      <h4 class="font-semibold text-white mb-2">MeÃ§a qualidade e custo</h4>
       <p class="text-sm text-neutral-400 mb-3">Etapa 3</p>
-      <p class="text-neutral-300 text-sm">Use evidência pequena e repetível. O objetivo é tomar uma decisão operacional, não provar que um modelo é perfeito.</p>
+      <p class="text-neutral-300 text-sm">Use evidÃªncia pequena e repetÃ­vel. O objetivo Ã© tomar uma decisÃ£o operacional, nÃ£o provar que um modelo Ã© perfeito.</p>
     </div>
   </div>
 </div>
   <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">◆</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-inema-block="m3-1-t3-p2">O ganho vem de preparação: bons documentos, chunks razoáveis, embeddings adequados e instruções claras para citar a fonte interna.</p>
+    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m3-1-t3-p2">O ganho vem de preparaÃ§Ã£o: bons documentos, chunks razoÃ¡veis, embeddings adequados e instruÃ§Ãµes claras para citar a fonte interna.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Chunks</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Embeddings</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Busca</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Citação interna</span></li>
+      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Chunks</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Embeddings</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Busca</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>CitaÃ§Ã£o interna</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">✦</span> Dica prática</h3>
-  <p class="text-neutral-300">Documento ruim produz RAG ruim. Limpe títulos, remova duplicatas e preserve contexto antes de culpar o modelo.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
+  <p class="text-neutral-300">Documento ruim produz RAG ruim. Limpe tÃ­tulos, remova duplicatas e preserve contexto antes de culpar o modelo.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Chunks</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Embeddings</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Busca</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-purple-400 font-semibold mb-1">Citação interna</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <div class="text-purple-400 font-semibold mb-1">CitaÃ§Ã£o interna</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
-      <span class="inema-read-icon" aria-hidden="true">○</span>
-      <span data-inema-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
+      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
+      <span data-ARCKHÉ-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-4" data-inema-topic="modulo-3-1#topico-4" class="topic-section mb-16">
+<section id="topico-4" data-ARCKHÉ-topic="modulo-3-1#topico-4" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
-      <h2 class="text-2xl font-bold">🧪 Conecte agentes prontos</h2>
+      <h2 class="text-2xl font-bold">ðŸ§ª Conecte agentes prontos</h2>
     </div>
-    <button type="button" data-inema-doubt-toggle aria-pressed="false" title="Marcar dúvida neste tópico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t4-p1">Agentes locais funcionam melhor quando recebem tarefas estreitas: resumir lote de documentos, preparar checklist, gerar rascunho ou executar uma sequência previsível.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t4-p1">Agentes locais funcionam melhor quando recebem tarefas estreitas: resumir lote de documentos, preparar checklist, gerar rascunho ou executar uma sequÃªncia previsÃ­vel.</p>
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">⌘</span> Registro operacional</h3>
+  <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">âŒ˜</span> Registro operacional</h3>
   <pre class="bg-dark-700/50 rounded-lg p-4 overflow-x-auto text-sm font-mono text-neutral-300"><code>modelo: candidato-local
 modulo: 3-1
-tarefa: resumo, extração, triagem
+tarefa: resumo, extraÃ§Ã£o, triagem
 criterios:
-  qualidade: aceitável para rascunho interno
-  privacidade: roda no laboratório local
+  qualidade: aceitÃ¡vel para rascunho interno
+  privacidade: roda no laboratÃ³rio local
   rollback: voltar ao modelo anterior
 logs:
   - comando executado
-  - erro reproduzível
-  - versão e quantização</code></pre>
+  - erro reproduzÃ­vel
+  - versÃ£o e quantizaÃ§Ã£o</code></pre>
 </div>
   <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">◆</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-inema-block="m3-1-t4-p2">O agente não é magia. É uma combinação de prompt, ferramenta, memória de curto prazo e política de execução.</p>
+    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m3-1-t4-p2">O agente nÃ£o Ã© magia. Ã‰ uma combinaÃ§Ã£o de prompt, ferramenta, memÃ³ria de curto prazo e polÃ­tica de execuÃ§Ã£o.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Ferramentas</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Escopo</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Execução</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Previsibilidade</span></li>
+      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Ferramentas</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Escopo</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>ExecuÃ§Ã£o</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Previsibilidade</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">✦</span> Dica prática</h3>
-  <p class="text-neutral-300">Cole logs completos no assistente fechado quando pedir ajuda. Sem versão, comando e erro, o diagnóstico vira chute.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
+  <p class="text-neutral-300">Cole logs completos no assistente fechado quando pedir ajuda. Sem versÃ£o, comando e erro, o diagnÃ³stico vira chute.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Ferramentas</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Escopo</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-purple-400 font-semibold mb-1">Execução</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <div class="text-purple-400 font-semibold mb-1">ExecuÃ§Ã£o</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Previsibilidade</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
-      <span class="inema-read-icon" aria-hidden="true">○</span>
-      <span data-inema-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
+      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
+      <span data-ARCKHÉ-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-5" data-inema-topic="modulo-3-1#topico-5" class="topic-section mb-16">
+<section id="topico-5" data-ARCKHÉ-topic="modulo-3-1#topico-5" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
-      <h2 class="text-2xl font-bold">🔁 Automatize com n8n local</h2>
+      <h2 class="text-2xl font-bold">ðŸ” Automatize com n8n local</h2>
     </div>
-    <button type="button" data-inema-doubt-toggle aria-pressed="false" title="Marcar dúvida neste tópico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t5-p1">Uma versão local do n8n permite criar workflows que chamam modelos, processam arquivos, enviam mensagens internas e disparam rotinas sem depender de integrações manuais.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t5-p1">Uma versÃ£o local do n8n permite criar workflows que chamam modelos, processam arquivos, enviam mensagens internas e disparam rotinas sem depender de integraÃ§Ãµes manuais.</p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
   <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-    <h4 class="font-bold text-emerald-400 mb-4">✓ O que FAZER</h4>
+    <h4 class="font-bold text-emerald-400 mb-4">âœ“ O que FAZER</h4>
     <ul class="space-y-3 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Testar com tarefas reais antes de escolher ferramenta.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Registrar modelo, versão, quantização e motivo da decisão.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Separar dados sensíveis de prompts que podem sair da máquina.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Testar com tarefas reais antes de escolher ferramenta.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Registrar modelo, versÃ£o, quantizaÃ§Ã£o e motivo da decisÃ£o.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Separar dados sensÃ­veis de prompts que podem sair da mÃ¡quina.</span></li>
     </ul>
   </div>
   <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-    <h4 class="font-bold text-red-400 mb-4">✗ O que NAO fazer</h4>
+    <h4 class="font-bold text-red-400 mb-4">âœ— O que NAO fazer</h4>
     <ul class="space-y-3 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Trocar de stack só porque um ranking novo apareceu.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Confundir fluxos sem saas com uma regra universal.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Rodar automações sem logs, rollback e limite de escopo.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Trocar de stack sÃ³ porque um ranking novo apareceu.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Confundir fluxos sem saas com uma regra universal.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Rodar automaÃ§Ãµes sem logs, rollback e limite de escopo.</span></li>
     </ul>
   </div>
 </div>
   <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">◆</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-inema-block="m3-1-t5-p2">O modelo vira um nó no fluxo. Ele recebe entrada estruturada e devolve saída para o próximo passo.</p>
+    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m3-1-t5-p2">O modelo vira um nÃ³ no fluxo. Ele recebe entrada estruturada e devolve saÃ­da para o prÃ³ximo passo.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Workflow</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Webhook</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Nós</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Auditoria</span></li>
+      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Workflow</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Webhook</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>NÃ³s</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Auditoria</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">✦</span> Dica prática</h3>
-  <p class="text-neutral-300">Automação boa tem entrada estruturada, saída esperada e um caminho claro para falhar sem causar dano.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
+  <p class="text-neutral-300">AutomaÃ§Ã£o boa tem entrada estruturada, saÃ­da esperada e um caminho claro para falhar sem causar dano.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Workflow</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Webhook</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-purple-400 font-semibold mb-1">Nós</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <div class="text-purple-400 font-semibold mb-1">NÃ³s</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Auditoria</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
-      <span class="inema-read-icon" aria-hidden="true">○</span>
-      <span data-inema-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
+      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
+      <span data-ARCKHÉ-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-6" data-inema-topic="modulo-3-1#topico-6" class="topic-section mb-16">
+<section id="topico-6" data-ARCKHÉ-topic="modulo-3-1#topico-6" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
-      <h2 class="text-2xl font-bold">✅ Construa um dashboard simples</h2>
+      <h2 class="text-2xl font-bold">âœ… Construa um dashboard simples</h2>
     </div>
-    <button type="button" data-inema-doubt-toggle aria-pressed="false" title="Marcar dúvida neste tópico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t6-p1">Um command center precisa mostrar sinais operacionais: modelo ativo, uso de CPU/GPU, memória, tamanho de contexto, status do runtime e filas de automação.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t6-p1">Um command center precisa mostrar sinais operacionais: modelo ativo, uso de CPU/GPU, memÃ³ria, tamanho de contexto, status do runtime e filas de automaÃ§Ã£o.</p>
   <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">▦</span> Métrica útil</h3>
+  <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">â–¦</span> MÃ©trica Ãºtil</h3>
   <ul class="space-y-2 text-neutral-300">
-    <li><strong>Latência:</strong> tempo até a primeira resposta e tempo total.</li>
-    <li><strong>Memória:</strong> quanto o modelo consome carregado e em contexto longo.</li>
-    <li><strong>Qualidade:</strong> taxa de respostas aceitáveis no seu benchmark.</li>
-    <li><strong>Manutenção:</strong> quantas vezes você precisa intervir para manter o fluxo.</li>
+    <li><strong>LatÃªncia:</strong> tempo atÃ© a primeira resposta e tempo total.</li>
+    <li><strong>MemÃ³ria:</strong> quanto o modelo consome carregado e em contexto longo.</li>
+    <li><strong>Qualidade:</strong> taxa de respostas aceitÃ¡veis no seu benchmark.</li>
+    <li><strong>ManutenÃ§Ã£o:</strong> quantas vezes vocÃª precisa intervir para manter o fluxo.</li>
   </ul>
 </div>
   <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">◆</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-inema-block="m3-1-t6-p2">O painel não é decoração. Ele responde se a máquina está saudável, se o modelo cabe e se a latência vem de hardware, contexto ou fila.</p>
+    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m3-1-t6-p2">O painel nÃ£o Ã© decoraÃ§Ã£o. Ele responde se a mÃ¡quina estÃ¡ saudÃ¡vel, se o modelo cabe e se a latÃªncia vem de hardware, contexto ou fila.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>CPU</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Memória</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Contexto</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Fila</span></li>
+      <li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>CPU</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>MemÃ³ria</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Contexto</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Fila</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">✦</span> Dica prática</h3>
-  <p class="text-neutral-300">O melhor setup é aquele que você consegue explicar, atualizar e restaurar em uma tarde.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
+  <p class="text-neutral-300">O melhor setup Ã© aquele que vocÃª consegue explicar, atualizar e restaurar em uma tarde.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">CPU</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-purple-400 font-semibold mb-1">Memória</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <div class="text-purple-400 font-semibold mb-1">MemÃ³ria</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Contexto</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-purple-400 font-semibold mb-1">Fila</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisão.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
   </div>
 </div>
-  <div data-inema-check="modulo-3-1#q1" class="inema-check">
-  <p class="inema-check__q">Qual é o critério mais importante antes de investir em hardware dedicado?</p>
-  <div class="inema-check__options space-y-2">
-    <button type="button" class="inema-check__option" data-inema-check-option="0">Comprar a máquina mais potente possível.</button>
-    <button type="button" class="inema-check__option" data-inema-check-option="1">Validar tarefa, carga real e ganho mensurável.</button>
-    <button type="button" class="inema-check__option" data-inema-check-option="2">Trocar de modelo sempre que surgir um ranking novo.</button>
+  <div data-ARCKHÉ-check="modulo-3-1#q1" class="ARCKHÉ-check">
+  <p class="ARCKHÉ-check__q">Qual Ã© o critÃ©rio mais importante antes de investir em hardware dedicado?</p>
+  <div class="ARCKHÉ-check__options space-y-2">
+    <button type="button" class="ARCKHÉ-check__option" data-ARCKHÉ-check-option="0">Comprar a mÃ¡quina mais potente possÃ­vel.</button>
+    <button type="button" class="ARCKHÉ-check__option" data-ARCKHÉ-check-option="1">Validar tarefa, carga real e ganho mensurÃ¡vel.</button>
+    <button type="button" class="ARCKHÉ-check__option" data-ARCKHÉ-check-option="2">Trocar de modelo sempre que surgir um ranking novo.</button>
   </div>
-  <p class="inema-check-feedback mt-4 text-sm" role="status" aria-live="polite"></p>
+  <p class="ARCKHÉ-check-feedback mt-4 text-sm" role="status" aria-live="polite"></p>
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  if (window.INEMA && INEMA.registerCheck) {
-    INEMA.registerCheck('modulo-3-1#q1', {
-      q: 'Qual é o critério mais importante antes de investir em hardware dedicado?',
-      options: ['Comprar a máquina mais potente possível.', 'Validar tarefa, carga real e ganho mensurável.', 'Trocar por ranking.'],
+  if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
+    ARCKHÉ.registerCheck('modulo-3-1#q1', {
+      q: 'Qual Ã© o critÃ©rio mais importante antes de investir em hardware dedicado?',
+      options: ['Comprar a mÃ¡quina mais potente possÃ­vel.', 'Validar tarefa, carga real e ganho mensurÃ¡vel.', 'Trocar por ranking.'],
       answer: '1',
       explain: {
-        '0': 'Potência sem caso de uso vira custo fixo.',
+        '0': 'PotÃªncia sem caso de uso vira custo fixo.',
         '1': 'Isso. A escala precisa seguir uso observado e valor claro.',
-        '2': 'Ranking ajuda a descobrir candidatos, mas não substitui teste operacional.'
+        '2': 'Ranking ajuda a descobrir candidatos, mas nÃ£o substitui teste operacional.'
       }
     });
   }
 });
 </script>
   <div class="flex justify-start mt-6">
-    <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
-      <span class="inema-read-icon" aria-hidden="true">○</span>
-      <span data-inema-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors">
+      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
+      <span data-ARCKHÉ-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
       <section class="mb-12">
   <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
-    <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do Modulo</h2>
+    <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do Modulo</h2>
     <div class="space-y-4 mb-8">
-      <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Instale o runtime de modelos</strong><span class="text-neutral-400"> - Ollama como base</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Use Open WebUI como cockpit</strong><span class="text-neutral-400"> - Chat familiar</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Adicione documentos com RAG</strong><span class="text-neutral-400"> - Perguntas sobre arquivos</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Conecte agentes prontos</strong><span class="text-neutral-400"> - Hermes e tarefas</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Automatize com n8n local</strong><span class="text-neutral-400"> - Fluxos sem SaaS</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Construa um dashboard simples</strong><span class="text-neutral-400"> - CPU, memória e contexto</span></div></div>
+      <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Instale o runtime de modelos</strong><span class="text-neutral-400"> - Ollama como base</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Use Open WebUI como cockpit</strong><span class="text-neutral-400"> - Chat familiar</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Adicione documentos com RAG</strong><span class="text-neutral-400"> - Perguntas sobre arquivos</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Conecte agentes prontos</strong><span class="text-neutral-400"> - Hermes e tarefas</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Automatize com n8n local</strong><span class="text-neutral-400"> - Fluxos sem SaaS</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Construa um dashboard simples</strong><span class="text-neutral-400"> - CPU, memÃ³ria e contexto</span></div></div>
     </div>
     <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
       <h3 class="font-semibold text-purple-400 mb-2">Proximo Modulo:</h3>
@@ -863,13 +863,13 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
       <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">Voltar para Trilha</a>
-      <a href="../trilha4/modulo-4-1.html" class="flex-1 text-center px-6 py-3 bg-purple-500/20 border border-purple-500/30 text-purple-400 rounded-lg font-semibold hover:bg-purple-500/30 transition-colors">Próximo módulo: Opere com estabilidade</a>
+      <a href="../trilha4/modulo-4-1.html" class="flex-1 text-center px-6 py-3 bg-purple-500/20 border border-purple-500/30 text-purple-400 rounded-lg font-semibold hover:bg-purple-500/30 transition-colors">PrÃ³ximo mÃ³dulo: Opere com estabilidade</a>
     </div>
   </div>
 </section>
     </div>
-    <nav data-inema-toc aria-label="Indice da pagina" class="hidden lg:block sticky top-24 self-start">
-  <p class="inema-toc-progress"><span data-inema-section-counter>Secao 1 de 6</span></p>
+    <nav data-ARCKHÉ-toc aria-label="Indice da pagina" class="hidden lg:block sticky top-24 self-start">
+  <p class="ARCKHÉ-toc-progress"><span data-ARCKHÉ-section-counter>Secao 1 de 6</span></p>
   <ul class="space-y-1">
     <li><a href="#topico-1">1. Instale o runtime de modelos</a></li>
 <li><a href="#topico-2">2. Use Open WebUI como cockpit</a></li>
@@ -891,7 +891,7 @@ function toggleTopic(button) {
   var panelId = button.getAttribute('aria-controls');
   var explanation = panelId ? document.getElementById(panelId) : null;
   if (!explanation) return;
-  var moduleCard = button.closest('[data-inema-module]') || button.closest('.module-shell') || document;
+  var moduleCard = button.closest('[data-ARCKHÉ-module]') || button.closest('.module-shell') || document;
   moduleCard.querySelectorAll('.topic-explanation.active').forEach(function (exp) {
     if (exp !== explanation) {
       exp.classList.remove('active');
@@ -924,24 +924,24 @@ document.addEventListener('keydown', function (e) {
 </script>
 <script src="../../assets/learn.js"></script>
 <script>
-if (window.INEMA && typeof window.INEMA.init === 'function') {
-  window.INEMA.init();
+if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+  window.ARCKHÉ.init();
 }
 document.addEventListener('click', function (e) {
   var t = e.target;
   if (!t || !t.closest) return;
   var nav = t.closest('nav');
   if (!nav) return;
-  var journey = t.closest('[data-inema-journey-open]');
-  if (journey && window.INEMA && INEMA.openJourney) {
+  var journey = t.closest('[data-ARCKHÉ-journey-open]');
+  if (journey && window.ARCKHÉ && ARCKHÉ.openJourney) {
     e.preventDefault();
-    INEMA.openJourney();
+    ARCKHÉ.openJourney();
     return;
   }
-  var toggle = t.closest('[data-inema-appearance-toggle]');
+  var toggle = t.closest('[data-ARCKHÉ-appearance-toggle]');
   if (toggle) {
-    var targetSel = toggle.getAttribute('data-inema-appearance-toggle');
-    var panel = targetSel ? document.querySelector(targetSel) : document.querySelector('[data-inema-appearance]');
+    var targetSel = toggle.getAttribute('data-ARCKHÉ-appearance-toggle');
+    var panel = targetSel ? document.querySelector(targetSel) : document.querySelector('[data-ARCKHÉ-appearance]');
     if (panel) {
       var open = panel.getAttribute('data-open') !== 'true';
       panel.setAttribute('data-open', open ? 'true' : 'false');
@@ -950,29 +950,29 @@ document.addEventListener('click', function (e) {
     return;
   }
   var pairs = [
-    ['data-inema-set-theme', 'theme'],
-    ['data-inema-set-font', 'font'],
-    ['data-inema-set-fontscale', 'fontScale'],
-    ['data-inema-set-linewidth', 'lineWidth'],
-    ['data-inema-set-leading', 'leading'],
-    ['data-inema-set-accent', 'accent']
+    ['data-ARCKHÉ-set-theme', 'theme'],
+    ['data-ARCKHÉ-set-font', 'font'],
+    ['data-ARCKHÉ-set-fontscale', 'fontScale'],
+    ['data-ARCKHÉ-set-linewidth', 'lineWidth'],
+    ['data-ARCKHÉ-set-leading', 'leading'],
+    ['data-ARCKHÉ-set-accent', 'accent']
   ];
   for (var i = 0; i < pairs.length; i++) {
     var btn = t.closest('[' + pairs[i][0] + ']');
-    if (btn && window.INEMA && INEMA.setPref) {
+    if (btn && window.ARCKHÉ && ARCKHÉ.setPref) {
       var raw = btn.getAttribute(pairs[i][0]);
       var key = pairs[i][1];
       var value = key === 'fontScale' || key === 'lineWidth' ? parseInt(raw, 10) : (key === 'leading' ? parseFloat(raw) : raw);
-      INEMA.setPref(key, value);
+      ARCKHÉ.setPref(key, value);
       return;
     }
   }
   var theme = t.closest('#theme-toggle');
   if (theme) {
     var html = document.documentElement;
-    var next = html.classList.contains('dark') ? 'claro' : 'inema-dark';
-    if (window.INEMA && INEMA.setPref) {
-      INEMA.setPref('theme', next);
+    var next = html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark';
+    if (window.ARCKHÉ && ARCKHÉ.setPref) {
+      ARCKHÉ.setPref('theme', next);
     } else {
       html.classList.toggle('dark');
       localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
