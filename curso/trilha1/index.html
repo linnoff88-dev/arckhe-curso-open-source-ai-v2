@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="ARCKHÉ-course" content="open-source-ai-command-center-v2">
+  <meta name="ARCKHê-course" content="open-source-ai-command-center-v2">
   <script>
 (function () {
   try {
     var html = document.documentElement;
-    var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+    var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
     function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
     var p = clone(DEF);
     try {
-      var raw = localStorage.getItem('ARCKHÉ.prefs');
+      var raw = localStorage.getItem('ARCKHê.prefs');
       if (raw) {
         var parsed = JSON.parse(raw);
         if (parsed && typeof parsed === 'object') {
@@ -21,17 +21,17 @@
       } else {
         var legacy = localStorage.getItem('theme');
         if (legacy === 'light') p.theme = 'claro';
-        else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+        else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
       }
     } catch (e) { p = clone(DEF); }
     var THEMES = {
-      'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+      'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
       'claro':      { dark: false, attr: null,        cs: 'light' },
       'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
       'foco':       { dark: null,  attr: 'foco',      cs: null    },
       'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
     };
-    var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+    var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
     if (t.dark === true) html.classList.add('dark');
     else if (t.dark === false) html.classList.remove('dark');
     if (t.attr) html.setAttribute('data-theme', t.attr);
@@ -41,7 +41,7 @@
     html.setAttribute('data-accent', p.accent || 'emerald');
     var s = html.style;
     var scale = (+p.fontScale || 100);
-    s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+    s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
     s.setProperty('font-size', scale + '%');
     s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
     s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -79,7 +79,7 @@
       }
     }
   </script>
-  <script type="application/json" data-ARCKHÉ-manifest>
+  <script type="application/json" data-ARCKHê-manifest>
 {
   "course": "open-source-ai-command-center-v2",
   "tracks": [
@@ -121,7 +121,7 @@
     },
     {
       "n": "4",
-      "title": "OperaÃ§Ã£o",
+      "title": "OperaêÂ§êÂ£o",
       "modules": [
         {
           "id": "4-1",
@@ -239,23 +239,23 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 }
 .module-shell { scroll-margin-top: 5rem; }
 .topic-section { scroll-margin-top: 5rem; }
-.course-meter .ARCKHÉ-bar { margin-top: .75rem; }
+.course-meter .ARCKHê-bar { margin-top: .75rem; }
   </style>
   <link rel="stylesheet" href="../../assets/learn.css">
   
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-  <a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+  <a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
   <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-wrap justify-between items-center min-h-14 gap-3 py-2">
       <div class="flex items-center space-x-4 min-w-0">
         <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
-          <span class="text-2xl">ðŸ§ </span>
+          <span class="text-2xl">ê°Å¸Â§Â </span>
           <span class="font-bold text-lg hidden sm:inline">IA Open Source</span>
         </a>
         <span class="text-neutral-600">|</span>
-        <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
+        <a href="https://ARCKHê AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHê AI</a>
       </div>
       <div class="flex items-center gap-1 sm:gap-2">
         <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10">
@@ -272,69 +272,69 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
       </a>
 <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors">
         <span class="sm:hidden">T4</span>
-        <span class="hidden sm:inline">OperaÃ§Ã£o</span>
+        <span class="hidden sm:inline">OperaêÂ§êÂ£o</span>
       </a>
-        <button type="button" data-ARCKHÉ-journey-open class="inline-flex items-center gap-2 px-2 sm:px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors">
-          <span aria-hidden="true">â—·</span>
+        <button type="button" data-ARCKHê-journey-open class="inline-flex items-center gap-2 px-2 sm:px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors">
+          <span aria-hidden="true">ê¢âÂ·</span>
           <span class="hidden lg:inline">Minha jornada</span>
-          <span class="ARCKHÉ-journey-badge hidden" data-ARCKHÉ-journey-badge data-count="0" aria-hidden="true"></span>
+          <span class="ARCKHê-journey-badge hidden" data-ARCKHê-journey-badge data-count="0" aria-hidden="true"></span>
         </button>
         <div class="relative">
-          <button type="button" class="ARCKHÉ-appearance-trigger" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" aria-expanded="false" aria-label="AparÃªncia">
-            <span aria-hidden="true">â—‘</span>
-            <span class="hidden lg:inline">AparÃªncia</span>
+          <button type="button" class="ARCKHê-appearance-trigger" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" aria-expanded="false" aria-label="AparêÂªncia">
+            <span aria-hidden="true">ê¢ââ</span>
+            <span class="hidden lg:inline">AparêÂªncia</span>
           </button>
-          <div data-ARCKHÉ-appearance class="ARCKHÉ-appearance-pop right-0">
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Tema</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
-      <button type="button" data-ARCKHÉ-set-theme="claro">Claro</button>
-      <button type="button" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
-      <button type="button" data-ARCKHÉ-set-theme="foco">Foco</button>
-      <button type="button" data-ARCKHÉ-set-theme="contraste">Contraste</button>
+          <div data-ARCKHê-appearance class="ARCKHê-appearance-pop right-0">
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Tema</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-theme="ARCKHê-dark">Escuro</button>
+      <button type="button" data-ARCKHê-set-theme="claro">Claro</button>
+      <button type="button" data-ARCKHê-set-theme="sepia">SêÂ©pia</button>
+      <button type="button" data-ARCKHê-set-theme="foco">Foco</button>
+      <button type="button" data-ARCKHê-set-theme="contraste">Contraste</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Fonte</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-font="inter">Inter</button>
-      <button type="button" data-ARCKHÉ-set-font="system">Sistema</button>
-      <button type="button" data-ARCKHÉ-set-font="leitura">Leitura</button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Fonte</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-font="inter">Inter</button>
+      <button type="button" data-ARCKHê-set-font="system">Sistema</button>
+      <button type="button" data-ARCKHê-set-font="leitura">Leitura</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Texto</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-fontscale="100">A</button>
-      <button type="button" data-ARCKHÉ-set-fontscale="112">A+</button>
-      <button type="button" data-ARCKHÉ-set-fontscale="125">A++</button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Texto</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-fontscale="100">A</button>
+      <button type="button" data-ARCKHê-set-fontscale="112">A+</button>
+      <button type="button" data-ARCKHê-set-fontscale="125">A++</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Linha</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-linewidth="60">60</button>
-      <button type="button" data-ARCKHÉ-set-linewidth="68">68</button>
-      <button type="button" data-ARCKHÉ-set-linewidth="75">75</button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Linha</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-linewidth="60">60</button>
+      <button type="button" data-ARCKHê-set-linewidth="68">68</button>
+      <button type="button" data-ARCKHê-set-linewidth="75">75</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Entrelinha</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-leading="1.45">Compacta</button>
-      <button type="button" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Entrelinha</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-leading="1.45">Compacta</button>
+      <button type="button" data-ARCKHê-set-leading="1.7">ConfortêÂ¡vel</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Acento</span>
-    <div class="ARCKHÉ-accent-grid">
-      <button type="button" data-ARCKHÉ-set-accent="emerald" data-accent="emerald" aria-label="Acento emerald"></button>
-<button type="button" data-ARCKHÉ-set-accent="blue" data-accent="blue" aria-label="Acento blue"></button>
-<button type="button" data-ARCKHÉ-set-accent="purple" data-accent="purple" aria-label="Acento purple"></button>
-<button type="button" data-ARCKHÉ-set-accent="amber" data-accent="amber" aria-label="Acento amber"></button>
-<button type="button" data-ARCKHÉ-set-accent="teal" data-accent="teal" aria-label="Acento teal"></button>
-<button type="button" data-ARCKHÉ-set-accent="rose" data-accent="rose" aria-label="Acento rose"></button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Acento</span>
+    <div class="ARCKHê-accent-grid">
+      <button type="button" data-ARCKHê-set-accent="emerald" data-accent="emerald" aria-label="Acento emerald"></button>
+<button type="button" data-ARCKHê-set-accent="blue" data-accent="blue" aria-label="Acento blue"></button>
+<button type="button" data-ARCKHê-set-accent="purple" data-accent="purple" aria-label="Acento purple"></button>
+<button type="button" data-ARCKHê-set-accent="amber" data-accent="amber" aria-label="Acento amber"></button>
+<button type="button" data-ARCKHê-set-accent="teal" data-accent="teal" aria-label="Acento teal"></button>
+<button type="button" data-ARCKHê-set-accent="rose" data-accent="rose" aria-label="Acento rose"></button>
     </div>
   </div>
 </div>
@@ -351,26 +351,26 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     </div>
   </div>
 </nav>
-  <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-track="1">
+  <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHê-track="1">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">TRILHA 1</span>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§­ Fundamentos</h1>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â§Â­ Fundamentos</h1>
     <p class="text-lg text-neutral-400 max-w-3xl">Transforme o susto de perder acesso a modelos fechados em uma arquitetura mais resiliente: local quando faz sentido, fechado quando entrega vantagem clara.</p>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-3xl">
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">1</div><div class="text-xs text-neutral-400">MÃ³dulo</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">55 min</div><div class="text-xs text-neutral-400">DuraÃ§Ã£o</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Essencial</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">1</div><div class="text-xs text-neutral-400">MêÂ³dulo</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">55 min</div><div class="text-xs text-neutral-400">DuraêÂ§êÂ£o</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Essencial</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
     </div>
-    <div class="mt-8 max-w-xl"><div data-ARCKHÉ-meter="trilha:1" class="course-meter p-5 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso da trilha 1">
+    <div class="mt-8 max-w-xl"><div data-ARCKHê-meter="trilha:1" class="course-meter p-5 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso da trilha 1">
   <div class="flex items-center justify-between gap-4">
     <span class="text-sm text-neutral-400">Progresso da trilha 1</span>
-    <span class="text-sm font-semibold text-primary" data-ARCKHÉ-meter-pct>0%</span>
+    <span class="text-sm font-semibold text-primary" data-ARCKHê-meter-pct>0%</span>
   </div>
   <div class="flex items-center justify-between gap-4 mt-1">
-    <span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac>0 de 0</span>
+    <span class="text-xs text-neutral-500" data-ARCKHê-meter-frac>0 de 0</span>
   </div>
-  <div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill></div></div>
+  <div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill></div></div>
 </div></div>
   </div>
 </header>
@@ -407,7 +407,7 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
     <g class="wf-a"><rect x="455" y="54" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="75" text-anchor="middle" fill="#bfe6ff">chat</text></g>
     <g class="wf-a"><rect x="455" y="114" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="135" text-anchor="middle" fill="#bfe6ff">tarefas</text></g>
-    <g class="wf-a"><rect x="455" y="174" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="195" text-anchor="middle" fill="#bfe6ff">automaÃ§Ã£o</text></g>
+    <g class="wf-a"><rect x="455" y="174" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="195" text-anchor="middle" fill="#bfe6ff">automaêÂ§êÂ£o</text></g>
   </g>
   <g filter="url(#svg-trilha1-glow)"><rect x="800" y="92" width="156" height="76" rx="14" fill="#0e2018" stroke="url(#svg-trilha1-grad)" stroke-width="2"/></g>
   <text x="878" y="124" text-anchor="middle" fill="#34d399" font-family="Inter,sans-serif" font-weight="600" font-size="18">painel local</text>
@@ -422,62 +422,62 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
         <span class="text-emerald-400 font-bold text-sm">1.1</span>
         <span class="text-xs text-neutral-500">~55 min</span>
       </div>
-      <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ðŸ›¡ï¸ Seguro mental para IA local</h3>
+      <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê°Å¸âºÂ¡ê¯Â¸Â Seguro mental para IA local</h3>
       <p class="text-xs text-neutral-400">Seguro mental</p>
     </a>
   </div>
 </section>
   <h2 class="text-2xl font-bold mb-6">Conteudo detalhado</h2>
-  <article id="modulo-1-1" data-ARCKHÉ-module="1-1" data-ARCKHÉ-track="1" class="module-shell bg-dark-800 rounded-xl border border-dark-600 mb-6">
+  <article id="modulo-1-1" data-ARCKHê-module="1-1" data-ARCKHê-track="1" class="module-shell bg-dark-800 rounded-xl border border-dark-600 mb-6">
   <div class="p-6 border-b border-dark-600">
     <div class="flex items-center justify-between mb-2">
       <span class="text-emerald-400 font-bold">1.1</span>
       <span class="text-xs text-neutral-500">~55 min</span>
     </div>
-    <h3 class="text-2xl font-bold mb-2">ðŸ›¡ï¸ Seguro mental para IA local</h3>
+    <h3 class="text-2xl font-bold mb-2">ê°Å¸âºÂ¡ê¯Â¸Â Seguro mental para IA local</h3>
     <p class="text-neutral-400 text-sm">Transforme o susto de perder acesso a modelos fechados em uma arquitetura mais resiliente: local quando faz sentido, fechado quando entrega vantagem clara.</p>
-    <div class="mt-5 max-w-md"><div data-ARCKHÉ-meter="modulo:1-1" class="course-meter p-4 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso do mÃ³dulo 1.1">
+    <div class="mt-5 max-w-md"><div data-ARCKHê-meter="modulo:1-1" class="course-meter p-4 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso do mêÂ³dulo 1.1">
   <div class="flex items-center justify-between gap-4">
-    <span class="text-sm text-neutral-400">Progresso do mÃ³dulo 1.1</span>
-    <span class="text-sm font-semibold text-primary" data-ARCKHÉ-meter-pct>0%</span>
+    <span class="text-sm text-neutral-400">Progresso do mêÂ³dulo 1.1</span>
+    <span class="text-sm font-semibold text-primary" data-ARCKHê-meter-pct>0%</span>
   </div>
   <div class="flex items-center justify-between gap-4 mt-1">
-    <span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac>0 de 0</span>
+    <span class="text-xs text-neutral-500" data-ARCKHê-meter-frac>0 de 0</span>
   </div>
-  <div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill></div></div>
+  <div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill></div></div>
 </div></div>
   </div>
   <div class="divide-y divide-dark-600">
-    <div class="topic-item" data-ARCKHÉ-topic="modulo-1-1#topico-1">
+    <div class="topic-item" data-ARCKHê-topic="modulo-1-1#topico-1">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-1-1-1" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-    <span class="text-lg">ðŸŽ¯</span>
+    <span class="text-lg">ê°Å¸Å½Â¯</span>
     <div>
-      <span class="font-medium">Entenda o risco de dependÃªncia</span>
-      <span class="text-neutral-500 text-sm ml-2">- Acesso muda rÃ¡pido</span>
+      <span class="font-medium">Entenda o risco de dependêÂªncia</span>
+      <span class="text-neutral-500 text-sm ml-2">- Acesso muda rêÂ¡pido</span>
     </div>
   </button>
   <div id="painel-1-1-1" class="topic-explanation px-6 pb-4">
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-emerald-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">Modelo fechado Ã© Ã³timo enquanto estÃ¡ disponÃ­vel, barato e alinhado Ã  sua polÃ­tica de dados. A camada local entra como redundÃ¢ncia operacional para pesquisa, rascunho, automaÃ§Ãµes internas e experimentos.</p>
+        <p class="text-neutral-300 text-sm">Modelo fechado êÂ© êÂ³timo enquanto estêÂ¡ disponêÂ­vel, barato e alinhado êÂ  sua polêÂ­tica de dados. A camada local entra como redundêÂ¢ncia operacional para pesquisa, rascunho, automaêÂ§êÂµes internas e experimentos.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Sem esse mapa mental, a discussÃ£o vira torcida por marcas. Com ele, vocÃª decide pelo risco, custo, privacidade, latÃªncia e qualidade suficiente para a tarefa.</p>
+        <p class="text-neutral-300 text-sm">Sem esse mapa mental, a discussêÂ£o vira torcida por marcas. Com ele, vocêÂª decide pelo risco, custo, privacidade, latêÂªncia e qualidade suficiente para a tarefa.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Risco de acesso Â· RedundÃ¢ncia Â· Custo previsÃ­vel Â· Qualidade suficiente</p>
+        <p class="text-neutral-300 text-sm">Risco de acesso êÂ· RedundêÂ¢ncia êÂ· Custo previsêÂ­vel êÂ· Qualidade suficiente</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-ARCKHÉ-topic="modulo-1-1#topico-2">
+<div class="topic-item" data-ARCKHê-topic="modulo-1-1#topico-2">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-1-1-2" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-    <span class="text-lg">âš–ï¸</span>
+    <span class="text-lg">ê¢Å¡âê¯Â¸Â</span>
     <div>
       <span class="font-medium">Separe frontier de suficiente</span>
       <span class="text-neutral-500 text-sm ml-2">- Nem tudo exige topo</span>
@@ -487,23 +487,23 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-emerald-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">A pergunta correta nÃ£o Ã© se o modelo local Ã© o melhor do mundo. A pergunta Ã© se ele resolve aquele trabalho com qualidade, custo e privacidade aceitÃ¡veis.</p>
+        <p class="text-neutral-300 text-sm">A pergunta correta nêÂ£o êÂ© se o modelo local êÂ© o melhor do mundo. A pergunta êÂ© se ele resolve aquele trabalho com qualidade, custo e privacidade aceitêÂ¡veis.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Essa distinÃ§Ã£o impede gasto desnecessÃ¡rio e reduz frustraÃ§Ã£o. VocÃª usa o frontier para o que realmente precisa de frontier e deixa o local carregar a base operacional.</p>
+        <p class="text-neutral-300 text-sm">Essa distinêÂ§êÂ£o impede gasto desnecessêÂ¡rio e reduz frustraêÂ§êÂ£o. VocêÂª usa o frontier para o que realmente precisa de frontier e deixa o local carregar a base operacional.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Frontier Â· Good enough Â· Rotina Â· Triagem</p>
+        <p class="text-neutral-300 text-sm">Frontier êÂ· Good enough êÂ· Rotina êÂ· Triagem</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-ARCKHÉ-topic="modulo-1-1#topico-3">
+<div class="topic-item" data-ARCKHê-topic="modulo-1-1#topico-3">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-1-1-3" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-    <span class="text-lg">ðŸ§©</span>
+    <span class="text-lg">ê°Å¸Â§Â©</span>
     <div>
       <span class="font-medium">Use fechado para construir aberto</span>
       <span class="text-neutral-500 text-sm ml-2">- Melhor dos dois mundos</span>
@@ -513,26 +513,26 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-emerald-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">O objetivo nÃ£o Ã© escolher um lado. Ã‰ usar a inteligÃªncia remota para reduzir a fricÃ§Ã£o de montar uma infraestrutura que depois roda perto dos seus arquivos e fluxos.</p>
+        <p class="text-neutral-300 text-sm">O objetivo nêÂ£o êÂ© escolher um lado. êâ° usar a inteligêÂªncia remota para reduzir a fricêÂ§êÂ£o de montar uma infraestrutura que depois roda perto dos seus arquivos e fluxos.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Isso torna o comeÃ§o menos intimidador. VocÃª aproveita o melhor assistente disponÃ­vel para atravessar instalaÃ§Ã£o, manutenÃ§Ã£o e debug sem ficar preso a ele para sempre.</p>
+        <p class="text-neutral-300 text-sm">Isso torna o comeêÂ§o menos intimidador. VocêÂª aproveita o melhor assistente disponêÂ­vel para atravessar instalaêÂ§êÂ£o, manutenêÂ§êÂ£o e debug sem ficar preso a ele para sempre.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Assistente de setup Â· Debug com logs Â· DocumentaÃ§Ã£o viva Â· Autonomia gradual</p>
+        <p class="text-neutral-300 text-sm">Assistente de setup êÂ· Debug com logs êÂ· DocumentaêÂ§êÂ£o viva êÂ· Autonomia gradual</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-ARCKHÉ-topic="modulo-1-1#topico-4">
+<div class="topic-item" data-ARCKHê-topic="modulo-1-1#topico-4">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-1-1-4" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-    <span class="text-lg">ðŸ§ª</span>
+    <span class="text-lg">ê°Å¸Â§Âª</span>
     <div>
       <span class="font-medium">Defina fronteiras de privacidade</span>
-      <span class="text-neutral-500 text-sm ml-2">- Dados tÃªm endereÃ§o</span>
+      <span class="text-neutral-500 text-sm ml-2">- Dados têÂªm endereêÂ§o</span>
     </div>
   </button>
   <div id="painel-1-1-4" class="topic-explanation px-6 pb-4">
@@ -543,63 +543,63 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Sem fronteira explÃ­cita, a equipe mistura dados sensÃ­veis com conveniÃªncia. Com fronteira, a escolha de modelo vira parte do processo, nÃ£o improviso.</p>
+        <p class="text-neutral-300 text-sm">Sem fronteira explêÂ­cita, a equipe mistura dados sensêÂ­veis com conveniêÂªncia. Com fronteira, a escolha de modelo vira parte do processo, nêÂ£o improviso.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Dados sensÃ­veis Â· Logs Â· Embeddings Â· PolÃ­tica de saÃ­da</p>
+        <p class="text-neutral-300 text-sm">Dados sensêÂ­veis êÂ· Logs êÂ· Embeddings êÂ· PolêÂ­tica de saêÂ­da</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-ARCKHÉ-topic="modulo-1-1#topico-5">
+<div class="topic-item" data-ARCKHê-topic="modulo-1-1#topico-5">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-1-1-5" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-    <span class="text-lg">ðŸ”</span>
+    <span class="text-lg">ê°Å¸âÂ</span>
     <div>
-      <span class="font-medium">Crie uma matriz de decisÃ£o</span>
-      <span class="text-neutral-500 text-sm ml-2">- Escolha repetÃ­vel</span>
+      <span class="font-medium">Crie uma matriz de decisêÂ£o</span>
+      <span class="text-neutral-500 text-sm ml-2">- Escolha repetêÂ­vel</span>
     </div>
   </button>
   <div id="painel-1-1-5" class="topic-explanation px-6 pb-4">
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-emerald-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">A matriz evita debates abstratos. Ela transforma â€œqual IA uso?â€ em uma decisÃ£o operacional que pode ser ensinada e repetida.</p>
+        <p class="text-neutral-300 text-sm">A matriz evita debates abstratos. Ela transforma ê¢â¬Åqual IA uso?ê¢â¬Â em uma decisêÂ£o operacional que pode ser ensinada e repetida.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">Quando o volume cresce, decisÃµes manuais viram gargalo. A matriz permite padronizar sem proibir experimentos.</p>
+        <p class="text-neutral-300 text-sm">Quando o volume cresce, decisêÂµes manuais viram gargalo. A matriz permite padronizar sem proibir experimentos.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Sensibilidade Â· Qualidade Â· LatÃªncia Â· Custo</p>
+        <p class="text-neutral-300 text-sm">Sensibilidade êÂ· Qualidade êÂ· LatêÂªncia êÂ· Custo</p>
       </div>
     </div>
   </div>
 </div>
-<div class="topic-item" data-ARCKHÉ-topic="modulo-1-1#topico-6">
+<div class="topic-item" data-ARCKHê-topic="modulo-1-1#topico-6">
   <button type="button" onclick="toggleTopic(this)" aria-expanded="false" aria-controls="painel-1-1-6" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
     <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-    <span class="text-lg">âœ…</span>
+    <span class="text-lg">ê¢Åâ¦</span>
     <div>
-      <span class="font-medium">Comece com um laboratÃ³rio isolado</span>
-      <span class="text-neutral-500 text-sm ml-2">- Teste sem bagunÃ§a</span>
+      <span class="font-medium">Comece com um laboratêÂ³rio isolado</span>
+      <span class="text-neutral-500 text-sm ml-2">- Teste sem bagunêÂ§a</span>
     </div>
   </button>
   <div id="painel-1-1-6" class="topic-explanation px-6 pb-4">
     <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
       <div>
         <span class="text-emerald-400 font-semibold">O que e:</span>
-        <p class="text-neutral-300 text-sm">O laboratÃ³rio reduz risco. VocÃª testa modelos, RAG, agentes e automaÃ§Ãµes sem contaminar projetos reais nem depender de uma arquitetura perfeita no primeiro dia.</p>
+        <p class="text-neutral-300 text-sm">O laboratêÂ³rio reduz risco. VocêÂª testa modelos, RAG, agentes e automaêÂ§êÂµes sem contaminar projetos reais nem depender de uma arquitetura perfeita no primeiro dia.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-        <p class="text-neutral-300 text-sm">A curva de aprendizado fica mais leve quando quebrar algo nÃ£o derruba seu fluxo principal. Depois vocÃª promove sÃ³ o que passou no teste.</p>
+        <p class="text-neutral-300 text-sm">A curva de aprendizado fica mais leve quando quebrar algo nêÂ£o derruba seu fluxo principal. Depois vocêÂª promove sêÂ³ o que passou no teste.</p>
       </div>
       <div>
         <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-        <p class="text-neutral-300 text-sm">Sandbox Â· Isolamento Â· PromoÃ§Ã£o gradual Â· Rollback</p>
+        <p class="text-neutral-300 text-sm">Sandbox êÂ· Isolamento êÂ· PromoêÂ§êÂ£o gradual êÂ· Rollback</p>
       </div>
     </div>
   </div>
@@ -612,7 +612,7 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 </article>
   <div class="flex justify-start gap-4 mt-10">
     <a href="../../index.html" class="px-5 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">Voltar ao curso</a>
-<a href="../trilha2/index.html" class="px-5 py-3 bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-lg font-semibold hover:bg-blue-500/30 transition-colors">PrÃ³xima trilha</a>
+<a href="../trilha2/index.html" class="px-5 py-3 bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-lg font-semibold hover:bg-blue-500/30 transition-colors">PrêÂ³xima trilha</a>
   </div>
 </main>
 <div id="modal-1-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target === this) closeModal()">
@@ -637,7 +637,7 @@ function toggleTopic(button) {
   var panelId = button.getAttribute('aria-controls');
   var explanation = panelId ? document.getElementById(panelId) : null;
   if (!explanation) return;
-  var moduleCard = button.closest('[data-ARCKHÉ-module]') || button.closest('.module-shell') || document;
+  var moduleCard = button.closest('[data-ARCKHê-module]') || button.closest('.module-shell') || document;
   moduleCard.querySelectorAll('.topic-explanation.active').forEach(function (exp) {
     if (exp !== explanation) {
       exp.classList.remove('active');
@@ -670,24 +670,24 @@ document.addEventListener('keydown', function (e) {
 </script>
 <script src="../../assets/learn.js"></script>
 <script>
-if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
-  window.ARCKHÉ.init();
+if (window.ARCKHê && typeof window.ARCKHê.init === 'function') {
+  window.ARCKHê.init();
 }
 document.addEventListener('click', function (e) {
   var t = e.target;
   if (!t || !t.closest) return;
   var nav = t.closest('nav');
   if (!nav) return;
-  var journey = t.closest('[data-ARCKHÉ-journey-open]');
-  if (journey && window.ARCKHÉ && ARCKHÉ.openJourney) {
+  var journey = t.closest('[data-ARCKHê-journey-open]');
+  if (journey && window.ARCKHê && ARCKHê.openJourney) {
     e.preventDefault();
-    ARCKHÉ.openJourney();
+    ARCKHê.openJourney();
     return;
   }
-  var toggle = t.closest('[data-ARCKHÉ-appearance-toggle]');
+  var toggle = t.closest('[data-ARCKHê-appearance-toggle]');
   if (toggle) {
-    var targetSel = toggle.getAttribute('data-ARCKHÉ-appearance-toggle');
-    var panel = targetSel ? document.querySelector(targetSel) : document.querySelector('[data-ARCKHÉ-appearance]');
+    var targetSel = toggle.getAttribute('data-ARCKHê-appearance-toggle');
+    var panel = targetSel ? document.querySelector(targetSel) : document.querySelector('[data-ARCKHê-appearance]');
     if (panel) {
       var open = panel.getAttribute('data-open') !== 'true';
       panel.setAttribute('data-open', open ? 'true' : 'false');
@@ -696,29 +696,29 @@ document.addEventListener('click', function (e) {
     return;
   }
   var pairs = [
-    ['data-ARCKHÉ-set-theme', 'theme'],
-    ['data-ARCKHÉ-set-font', 'font'],
-    ['data-ARCKHÉ-set-fontscale', 'fontScale'],
-    ['data-ARCKHÉ-set-linewidth', 'lineWidth'],
-    ['data-ARCKHÉ-set-leading', 'leading'],
-    ['data-ARCKHÉ-set-accent', 'accent']
+    ['data-ARCKHê-set-theme', 'theme'],
+    ['data-ARCKHê-set-font', 'font'],
+    ['data-ARCKHê-set-fontscale', 'fontScale'],
+    ['data-ARCKHê-set-linewidth', 'lineWidth'],
+    ['data-ARCKHê-set-leading', 'leading'],
+    ['data-ARCKHê-set-accent', 'accent']
   ];
   for (var i = 0; i < pairs.length; i++) {
     var btn = t.closest('[' + pairs[i][0] + ']');
-    if (btn && window.ARCKHÉ && ARCKHÉ.setPref) {
+    if (btn && window.ARCKHê && ARCKHê.setPref) {
       var raw = btn.getAttribute(pairs[i][0]);
       var key = pairs[i][1];
       var value = key === 'fontScale' || key === 'lineWidth' ? parseInt(raw, 10) : (key === 'leading' ? parseFloat(raw) : raw);
-      ARCKHÉ.setPref(key, value);
+      ARCKHê.setPref(key, value);
       return;
     }
   }
   var theme = t.closest('#theme-toggle');
   if (theme) {
     var html = document.documentElement;
-    var next = html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark';
-    if (window.ARCKHÉ && ARCKHÉ.setPref) {
-      ARCKHÉ.setPref('theme', next);
+    var next = html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark';
+    if (window.ARCKHê && ARCKHê.setPref) {
+      ARCKHê.setPref('theme', next);
     } else {
       html.classList.toggle('dark');
       localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');

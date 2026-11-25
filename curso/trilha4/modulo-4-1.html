@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="ARCKHÉ-course" content="open-source-ai-command-center-v2">
+  <meta name="ARCKHê-course" content="open-source-ai-command-center-v2">
   <script>
 (function () {
   try {
     var html = document.documentElement;
-    var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+    var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
     function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
     var p = clone(DEF);
     try {
-      var raw = localStorage.getItem('ARCKHÉ.prefs');
+      var raw = localStorage.getItem('ARCKHê.prefs');
       if (raw) {
         var parsed = JSON.parse(raw);
         if (parsed && typeof parsed === 'object') {
@@ -21,17 +21,17 @@
       } else {
         var legacy = localStorage.getItem('theme');
         if (legacy === 'light') p.theme = 'claro';
-        else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+        else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
       }
     } catch (e) { p = clone(DEF); }
     var THEMES = {
-      'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+      'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
       'claro':      { dark: false, attr: null,        cs: 'light' },
       'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
       'foco':       { dark: null,  attr: 'foco',      cs: null    },
       'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
     };
-    var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+    var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
     if (t.dark === true) html.classList.add('dark');
     else if (t.dark === false) html.classList.remove('dark');
     if (t.attr) html.setAttribute('data-theme', t.attr);
@@ -41,7 +41,7 @@
     html.setAttribute('data-accent', p.accent || 'emerald');
     var s = html.style;
     var scale = (+p.fontScale || 100);
-    s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+    s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
     s.setProperty('font-size', scale + '%');
     s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
     s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -79,7 +79,7 @@
       }
     }
   </script>
-  <script type="application/json" data-ARCKHÉ-manifest>
+  <script type="application/json" data-ARCKHê-manifest>
 {
   "course": "open-source-ai-command-center-v2",
   "tracks": [
@@ -121,7 +121,7 @@
     },
     {
       "n": "4",
-      "title": "OperaÃ§Ã£o",
+      "title": "OperaêÂ§êÂ£o",
       "modules": [
         {
           "id": "4-1",
@@ -135,7 +135,7 @@
 }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <title>MÃ³dulo 4.1: Opere com estabilidade | Command Center de IA Open Source</title>
+  <title>MêÂ³dulo 4.1: Opere com estabilidade | Command Center de IA Open Source</title>
   <style>
 body { font-family: 'Inter', sans-serif; }
 .dark body { background-color: #111827; }
@@ -239,23 +239,23 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 }
 .module-shell { scroll-margin-top: 5rem; }
 .topic-section { scroll-margin-top: 5rem; }
-.course-meter .ARCKHÉ-bar { margin-top: .75rem; }
+.course-meter .ARCKHê-bar { margin-top: .75rem; }
   </style>
   <link rel="stylesheet" href="../../assets/learn.css">
   
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-  <a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+  <a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
   <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-wrap justify-between items-center min-h-14 gap-3 py-2">
       <div class="flex items-center space-x-4 min-w-0">
         <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
-          <span class="text-2xl">ðŸ§ </span>
+          <span class="text-2xl">ê°Å¸Â§Â </span>
           <span class="font-bold text-lg hidden sm:inline">IA Open Source</span>
         </a>
         <span class="text-neutral-600">|</span>
-        <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
+        <a href="https://ARCKHê AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHê AI</a>
       </div>
       <div class="flex items-center gap-1 sm:gap-2">
         <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors">
@@ -272,69 +272,69 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
       </a>
 <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10">
         <span class="sm:hidden">T4</span>
-        <span class="hidden sm:inline">OperaÃ§Ã£o</span>
+        <span class="hidden sm:inline">OperaêÂ§êÂ£o</span>
       </a>
-        <button type="button" data-ARCKHÉ-journey-open class="inline-flex items-center gap-2 px-2 sm:px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors">
-          <span aria-hidden="true">â—·</span>
+        <button type="button" data-ARCKHê-journey-open class="inline-flex items-center gap-2 px-2 sm:px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors">
+          <span aria-hidden="true">ê¢âÂ·</span>
           <span class="hidden lg:inline">Minha jornada</span>
-          <span class="ARCKHÉ-journey-badge hidden" data-ARCKHÉ-journey-badge data-count="0" aria-hidden="true"></span>
+          <span class="ARCKHê-journey-badge hidden" data-ARCKHê-journey-badge data-count="0" aria-hidden="true"></span>
         </button>
         <div class="relative">
-          <button type="button" class="ARCKHÉ-appearance-trigger" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" aria-expanded="false" aria-label="AparÃªncia">
-            <span aria-hidden="true">â—‘</span>
-            <span class="hidden lg:inline">AparÃªncia</span>
+          <button type="button" class="ARCKHê-appearance-trigger" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" aria-expanded="false" aria-label="AparêÂªncia">
+            <span aria-hidden="true">ê¢ââ</span>
+            <span class="hidden lg:inline">AparêÂªncia</span>
           </button>
-          <div data-ARCKHÉ-appearance class="ARCKHÉ-appearance-pop right-0">
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Tema</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
-      <button type="button" data-ARCKHÉ-set-theme="claro">Claro</button>
-      <button type="button" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
-      <button type="button" data-ARCKHÉ-set-theme="foco">Foco</button>
-      <button type="button" data-ARCKHÉ-set-theme="contraste">Contraste</button>
+          <div data-ARCKHê-appearance class="ARCKHê-appearance-pop right-0">
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Tema</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-theme="ARCKHê-dark">Escuro</button>
+      <button type="button" data-ARCKHê-set-theme="claro">Claro</button>
+      <button type="button" data-ARCKHê-set-theme="sepia">SêÂ©pia</button>
+      <button type="button" data-ARCKHê-set-theme="foco">Foco</button>
+      <button type="button" data-ARCKHê-set-theme="contraste">Contraste</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Fonte</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-font="inter">Inter</button>
-      <button type="button" data-ARCKHÉ-set-font="system">Sistema</button>
-      <button type="button" data-ARCKHÉ-set-font="leitura">Leitura</button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Fonte</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-font="inter">Inter</button>
+      <button type="button" data-ARCKHê-set-font="system">Sistema</button>
+      <button type="button" data-ARCKHê-set-font="leitura">Leitura</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Texto</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-fontscale="100">A</button>
-      <button type="button" data-ARCKHÉ-set-fontscale="112">A+</button>
-      <button type="button" data-ARCKHÉ-set-fontscale="125">A++</button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Texto</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-fontscale="100">A</button>
+      <button type="button" data-ARCKHê-set-fontscale="112">A+</button>
+      <button type="button" data-ARCKHê-set-fontscale="125">A++</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Linha</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-linewidth="60">60</button>
-      <button type="button" data-ARCKHÉ-set-linewidth="68">68</button>
-      <button type="button" data-ARCKHÉ-set-linewidth="75">75</button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Linha</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-linewidth="60">60</button>
+      <button type="button" data-ARCKHê-set-linewidth="68">68</button>
+      <button type="button" data-ARCKHê-set-linewidth="75">75</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Entrelinha</span>
-    <div class="ARCKHÉ-segment">
-      <button type="button" data-ARCKHÉ-set-leading="1.45">Compacta</button>
-      <button type="button" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Entrelinha</span>
+    <div class="ARCKHê-segment">
+      <button type="button" data-ARCKHê-set-leading="1.45">Compacta</button>
+      <button type="button" data-ARCKHê-set-leading="1.7">ConfortêÂ¡vel</button>
     </div>
   </div>
-  <div class="ARCKHÉ-pref-group">
-    <span class="ARCKHÉ-pref-group__label">Acento</span>
-    <div class="ARCKHÉ-accent-grid">
-      <button type="button" data-ARCKHÉ-set-accent="emerald" data-accent="emerald" aria-label="Acento emerald"></button>
-<button type="button" data-ARCKHÉ-set-accent="blue" data-accent="blue" aria-label="Acento blue"></button>
-<button type="button" data-ARCKHÉ-set-accent="purple" data-accent="purple" aria-label="Acento purple"></button>
-<button type="button" data-ARCKHÉ-set-accent="amber" data-accent="amber" aria-label="Acento amber"></button>
-<button type="button" data-ARCKHÉ-set-accent="teal" data-accent="teal" aria-label="Acento teal"></button>
-<button type="button" data-ARCKHÉ-set-accent="rose" data-accent="rose" aria-label="Acento rose"></button>
+  <div class="ARCKHê-pref-group">
+    <span class="ARCKHê-pref-group__label">Acento</span>
+    <div class="ARCKHê-accent-grid">
+      <button type="button" data-ARCKHê-set-accent="emerald" data-accent="emerald" aria-label="Acento emerald"></button>
+<button type="button" data-ARCKHê-set-accent="blue" data-accent="blue" aria-label="Acento blue"></button>
+<button type="button" data-ARCKHê-set-accent="purple" data-accent="purple" aria-label="Acento purple"></button>
+<button type="button" data-ARCKHê-set-accent="amber" data-accent="amber" aria-label="Acento amber"></button>
+<button type="button" data-ARCKHê-set-accent="teal" data-accent="teal" aria-label="Acento teal"></button>
+<button type="button" data-ARCKHê-set-accent="rose" data-accent="rose" aria-label="Acento rose"></button>
     </div>
   </div>
 </div>
@@ -363,43 +363,43 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-y border-dark-600">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULO 4.1</span>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4">âš™ï¸ Opere com estabilidade</h1>
-    <p class="text-lg text-neutral-400 max-w-3xl">Organize hardware, acesso remoto, manutenÃ§Ã£o, debug assistido e rotinas de backup para manter o command center Ãºtil depois da primeira instalaÃ§Ã£o.</p>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">ê¢Å¡â¢ê¯Â¸Â Opere com estabilidade</h1>
+    <p class="text-lg text-neutral-400 max-w-3xl">Organize hardware, acesso remoto, manutenêÂ§êÂ£o, debug assistido e rotinas de backup para manter o command center êÂºtil depois da primeira instalaêÂ§êÂ£o.</p>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-3xl">
       <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">Topicos</div></div>
       <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">70</div><div class="text-xs text-neutral-400">Minutos</div></div>
       <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Operacional</div><div class="text-xs text-neutral-400">Nivel</div></div>
-      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">OperaÃ§Ã£o</div><div class="text-xs text-neutral-400">Tipo</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">OperaêÂ§êÂ£o</div><div class="text-xs text-neutral-400">Tipo</div></div>
     </div>
-    <div class="mt-8 max-w-xl"><div data-ARCKHÉ-meter="modulo:4-1" class="course-meter p-5 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso do mÃ³dulo 4.1">
+    <div class="mt-8 max-w-xl"><div data-ARCKHê-meter="modulo:4-1" class="course-meter p-5 rounded-xl bg-dark-800/70 border border-dark-600" aria-label="Progresso do mêÂ³dulo 4.1">
   <div class="flex items-center justify-between gap-4">
-    <span class="text-sm text-neutral-400">Progresso do mÃ³dulo 4.1</span>
-    <span class="text-sm font-semibold text-primary" data-ARCKHÉ-meter-pct>0%</span>
+    <span class="text-sm text-neutral-400">Progresso do mêÂ³dulo 4.1</span>
+    <span class="text-sm font-semibold text-primary" data-ARCKHê-meter-pct>0%</span>
   </div>
   <div class="flex items-center justify-between gap-4 mt-1">
-    <span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac>0 de 0</span>
+    <span class="text-xs text-neutral-500" data-ARCKHê-meter-frac>0 de 0</span>
   </div>
-  <div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill></div></div>
+  <div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill></div></div>
 </div></div>
   </div>
 </header>
 <main id="conteudo" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <article id="modulo-4-1" data-ARCKHÉ-module="4-1" data-ARCKHÉ-track="4" class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-10">
-    <div class="ARCKHÉ-prose max-w-none">
-      <section id="topico-1" data-ARCKHÉ-topic="modulo-4-1#topico-1" class="topic-section mb-16">
+  <article id="modulo-4-1" data-ARCKHê-module="4-1" data-ARCKHê-track="4" class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-10">
+    <div class="ARCKHê-prose max-w-none">
+      <section id="topico-1" data-ARCKHê-topic="modulo-4-1#topico-1" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
-      <h2 class="text-2xl font-bold">ðŸŽ¯ Escolha hardware pelo gargalo</h2>
+      <h2 class="text-2xl font-bold">ê°Å¸Å½Â¯ Escolha hardware pelo gargalo</h2>
     </div>
-    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHê-doubt-toggle aria-pressed="false" title="Marcar dêÂºvida neste têÂ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t1-p1">Para IA local, a pergunta principal Ã© o que cabe na memÃ³ria e com que velocidade responde. CPU, GPU, VRAM e memÃ³ria unificada mudam o tipo de modelo viÃ¡vel.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-1-t1-p1">Para IA local, a pergunta principal êÂ© o que cabe na memêÂ³ria e com que velocidade responde. CPU, GPU, VRAM e memêÂ³ria unificada mudam o tipo de modelo viêÂ¡vel.</p>
   <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-8 overflow-hidden">
-<svg viewBox="0 0 1000 260" class="w-full h-auto" role="img" aria-label="Fluxo ilustrativo mostrando DependÃªncia, decisÃ£o e autonomia">
+<svg viewBox="0 0 1000 260" class="w-full h-auto" role="img" aria-label="Fluxo ilustrativo mostrando DependêÂªncia, decisêÂ£o e autonomia">
   <defs>
     <linearGradient id="svg-411-grad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/>
@@ -425,12 +425,12 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <path d="M585,190 C700,190 730,130 800,130" marker-end="url(#svg-411-ahc)"/>
   </g>
   <g filter="url(#svg-411-glow)"><rect x="50" y="92" width="156" height="76" rx="14" fill="#1f1604" stroke="url(#svg-411-grad)" stroke-width="2"/></g>
-  <text x="128" y="124" text-anchor="middle" fill="#fbbf24" font-family="Inter,sans-serif" font-weight="600" font-size="19">DependÃªncia</text>
+  <text x="128" y="124" text-anchor="middle" fill="#fbbf24" font-family="Inter,sans-serif" font-weight="600" font-size="19">DependêÂªncia</text>
   <text x="128" y="146" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="12">ponto de partida</text>
   <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
     <g class="wf-a"><rect x="455" y="54" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="75" text-anchor="middle" fill="#bfe6ff">chat</text></g>
-    <g class="wf-a"><rect x="455" y="114" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="135" text-anchor="middle" fill="#bfe6ff">decisÃ£o</text></g>
-    <g class="wf-a"><rect x="455" y="174" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="195" text-anchor="middle" fill="#bfe6ff">automaÃ§Ã£o</text></g>
+    <g class="wf-a"><rect x="455" y="114" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="135" text-anchor="middle" fill="#bfe6ff">decisêÂ£o</text></g>
+    <g class="wf-a"><rect x="455" y="174" width="130" height="32" rx="9" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="520" y="195" text-anchor="middle" fill="#bfe6ff">automaêÂ§êÂ£o</text></g>
   </g>
   <g filter="url(#svg-411-glow)"><rect x="800" y="92" width="156" height="76" rx="14" fill="#1f1604" stroke="url(#svg-411-grad)" stroke-width="2"/></g>
   <text x="878" y="124" text-anchor="middle" fill="#fbbf24" font-family="Inter,sans-serif" font-weight="600" font-size="18">autonomia</text>
@@ -438,134 +438,134 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 </svg>
 </div>
   <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m4-1-t1-p2">Um Mac Mini, desktop ou notebook dedicado pode ser suficiente se o objetivo Ã© laboratÃ³rio, chat interno e automaÃ§Ãµes leves. Hardware maior sÃ³ faz sentido quando o uso justifica.</p>
+    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê¢ââ </span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHê-block="m4-1-t1-p2">Um Mac Mini, desktop ou notebook dedicado pode ser suficiente se o objetivo êÂ© laboratêÂ³rio, chat interno e automaêÂ§êÂµes leves. Hardware maior sêÂ³ faz sentido quando o uso justifica.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>VRAM</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>MemÃ³ria unificada</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>LatÃªncia</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Dimensionamento</span></li>
+      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>VRAM</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>MemêÂ³ria unificada</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>LatêÂªncia</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Dimensionamento</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
-  <p class="text-neutral-300">Trate a IA local como laboratÃ³rio primeiro. SÃ³ promova para rotina depois de um teste que vocÃª consiga repetir.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢ÅÂ¦</span> Dica prêÂ¡tica</h3>
+  <p class="text-neutral-300">Trate a IA local como laboratêÂ³rio primeiro. SêÂ³ promova para rotina depois de um teste que vocêÂª consiga repetir.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">VRAM</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">MemÃ³ria unificada</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">MemêÂ³ria unificada</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">LatÃªncia</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">LatêÂªncia</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Dimensionamento</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
-      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
-      <span data-ARCKHÉ-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHê-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
+      <span class="ARCKHê-read-icon" aria-hidden="true">ê¢ââ¹</span>
+      <span data-ARCKHê-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-2" data-ARCKHÉ-topic="modulo-4-1#topico-2" class="topic-section mb-16">
+<section id="topico-2" data-ARCKHê-topic="modulo-4-1#topico-2" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
-      <h2 class="text-2xl font-bold">âš–ï¸ Acesse com Tailscale</h2>
+      <h2 class="text-2xl font-bold">ê¢Å¡âê¯Â¸Â Acesse com Tailscale</h2>
     </div>
-    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHê-doubt-toggle aria-pressed="false" title="Marcar dêÂºvida neste têÂ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t2-p1">Tailscale cria uma rede privada entre seus dispositivos. Assim vocÃª acessa o servidor local de outro computador sem abrir portas pÃºblicas no roteador.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-1-t2-p1">Tailscale cria uma rede privada entre seus dispositivos. Assim vocêÂª acessa o servidor local de outro computador sem abrir portas pêÂºblicas no roteador.</p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
   <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-    <h4 class="font-bold text-emerald-400 mb-4">âœ“ O que FAZER</h4>
+    <h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ O que FAZER</h4>
     <ul class="space-y-3 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Testar com tarefas reais antes de escolher ferramenta.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Registrar modelo, versÃ£o, quantizaÃ§Ã£o e motivo da decisÃ£o.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Separar dados sensÃ­veis de prompts que podem sair da mÃ¡quina.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Testar com tarefas reais antes de escolher ferramenta.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Registrar modelo, versêÂ£o, quantizaêÂ§êÂ£o e motivo da decisêÂ£o.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Separar dados sensêÂ­veis de prompts que podem sair da mêÂ¡quina.</span></li>
     </ul>
   </div>
   <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-    <h4 class="font-bold text-red-400 mb-4">âœ— O que NAO fazer</h4>
+    <h4 class="font-bold text-red-400 mb-4">ê¢Åâ O que NAO fazer</h4>
     <ul class="space-y-3 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Trocar de stack sÃ³ porque um ranking novo apareceu.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Confundir remoto sem expor com uma regra universal.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Rodar automaÃ§Ãµes sem logs, rollback e limite de escopo.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Trocar de stack sêÂ³ porque um ranking novo apareceu.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Confundir remoto sem expor com uma regra universal.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Rodar automaêÂ§êÂµes sem logs, rollback e limite de escopo.</span></li>
     </ul>
   </div>
 </div>
   <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m4-1-t2-p2">A regra operacional Ã© simples: serviÃ§o local escutando na mÃ¡quina, acesso privado via tailnet, autenticaÃ§Ã£o forte e permissÃµes mÃ­nimas.</p>
+    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê¢ââ </span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHê-block="m4-1-t2-p2">A regra operacional êÂ© simples: serviêÂ§o local escutando na mêÂ¡quina, acesso privado via tailnet, autenticaêÂ§êÂ£o forte e permissêÂµes mêÂ­nimas.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Tailnet</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Zero trust</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Sem porta pÃºblica</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>ACL</span></li>
+      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Tailnet</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Zero trust</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Sem porta pêÂºblica</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>ACL</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
-  <p class="text-neutral-300">Se um modelo parece fraco, teste outra quantizaÃ§Ã£o antes de descartar a famÃ­lia inteira.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢ÅÂ¦</span> Dica prêÂ¡tica</h3>
+  <p class="text-neutral-300">Se um modelo parece fraco, teste outra quantizaêÂ§êÂ£o antes de descartar a famêÂ­lia inteira.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Tailnet</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Zero trust</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">Sem porta pÃºblica</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">Sem porta pêÂºblica</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">ACL</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
-      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
-      <span data-ARCKHÉ-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHê-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
+      <span class="ARCKHê-read-icon" aria-hidden="true">ê¢ââ¹</span>
+      <span data-ARCKHê-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-3" data-ARCKHÉ-topic="modulo-4-1#topico-3" class="topic-section mb-16">
+<section id="topico-3" data-ARCKHê-topic="modulo-4-1#topico-3" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
-      <h2 class="text-2xl font-bold">ðŸ§© Monitore antes de otimizar</h2>
+      <h2 class="text-2xl font-bold">ê°Å¸Â§Â© Monitore antes de otimizar</h2>
     </div>
-    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHê-doubt-toggle aria-pressed="false" title="Marcar dêÂºvida neste têÂ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t3-p1">Quando algo falha, colete logs, comando executado, modelo, quantizaÃ§Ã£o, versÃ£o, memÃ³ria livre e entrada mÃ­nima que reproduz o problema.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-1-t3-p1">Quando algo falha, colete logs, comando executado, modelo, quantizaêÂ§êÂ£o, versêÂ£o, memêÂ³ria livre e entrada mêÂ­nima que reproduz o problema.</p>
   <div class="space-y-6 mb-6">
   <div class="flex items-start space-x-4">
     <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">1</span></div>
     <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-      <h4 class="font-semibold text-white mb-2">Defina a tarefa mÃ­nima</h4>
+      <h4 class="font-semibold text-white mb-2">Defina a tarefa mêÂ­nima</h4>
       <p class="text-sm text-neutral-400 mb-3">Etapa 1</p>
-      <p class="text-neutral-300 text-sm">Use evidÃªncia pequena e repetÃ­vel. O objetivo Ã© tomar uma decisÃ£o operacional, nÃ£o provar que um modelo Ã© perfeito.</p>
+      <p class="text-neutral-300 text-sm">Use evidêÂªncia pequena e repetêÂ­vel. O objetivo êÂ© tomar uma decisêÂ£o operacional, nêÂ£o provar que um modelo êÂ© perfeito.</p>
     </div>
   </div>
 <div class="flex items-start space-x-4">
@@ -573,310 +573,310 @@ html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
     <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
       <h4 class="font-semibold text-white mb-2">Escolha dois candidatos</h4>
       <p class="text-sm text-neutral-400 mb-3">Etapa 2</p>
-      <p class="text-neutral-300 text-sm">Use evidÃªncia pequena e repetÃ­vel. O objetivo Ã© tomar uma decisÃ£o operacional, nÃ£o provar que um modelo Ã© perfeito.</p>
+      <p class="text-neutral-300 text-sm">Use evidêÂªncia pequena e repetêÂ­vel. O objetivo êÂ© tomar uma decisêÂ£o operacional, nêÂ£o provar que um modelo êÂ© perfeito.</p>
     </div>
   </div>
 <div class="flex items-start space-x-4">
     <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">3</span></div>
     <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-      <h4 class="font-semibold text-white mb-2">MeÃ§a qualidade e custo</h4>
+      <h4 class="font-semibold text-white mb-2">MeêÂ§a qualidade e custo</h4>
       <p class="text-sm text-neutral-400 mb-3">Etapa 3</p>
-      <p class="text-neutral-300 text-sm">Use evidÃªncia pequena e repetÃ­vel. O objetivo Ã© tomar uma decisÃ£o operacional, nÃ£o provar que um modelo Ã© perfeito.</p>
+      <p class="text-neutral-300 text-sm">Use evidêÂªncia pequena e repetêÂ­vel. O objetivo êÂ© tomar uma decisêÂ£o operacional, nêÂ£o provar que um modelo êÂ© perfeito.</p>
     </div>
   </div>
 </div>
   <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m4-1-t3-p2">VocÃª pode colar esse pacote em Claude ou Codex para pedir diagnÃ³stico. Quanto melhor o contexto, menos chute a resposta terÃ¡.</p>
+    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê¢ââ </span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHê-block="m4-1-t3-p2">VocêÂª pode colar esse pacote em Claude ou Codex para pedir diagnêÂ³stico. Quanto melhor o contexto, menos chute a resposta terêÂ¡.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Logs</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>ReproduÃ§Ã£o</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>VersÃ£o</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>DiagnÃ³stico</span></li>
+      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Logs</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>ReproduêÂ§êÂ£o</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>VersêÂ£o</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>DiagnêÂ³stico</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
-  <p class="text-neutral-300">Documento ruim produz RAG ruim. Limpe tÃ­tulos, remova duplicatas e preserve contexto antes de culpar o modelo.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢ÅÂ¦</span> Dica prêÂ¡tica</h3>
+  <p class="text-neutral-300">Documento ruim produz RAG ruim. Limpe têÂ­tulos, remova duplicatas e preserve contexto antes de culpar o modelo.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Logs</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">ReproduÃ§Ã£o</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">ReproduêÂ§êÂ£o</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">VersÃ£o</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">VersêÂ£o</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">DiagnÃ³stico</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">DiagnêÂ³stico</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
-      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
-      <span data-ARCKHÉ-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHê-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
+      <span class="ARCKHê-read-icon" aria-hidden="true">ê¢ââ¹</span>
+      <span data-ARCKHê-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-4" data-ARCKHÉ-topic="modulo-4-1#topico-4" class="topic-section mb-16">
+<section id="topico-4" data-ARCKHê-topic="modulo-4-1#topico-4" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
-      <h2 class="text-2xl font-bold">ðŸ§ª Use Codex como mantenedor</h2>
+      <h2 class="text-2xl font-bold">ê°Å¸Â§Âª Use Codex como mantenedor</h2>
     </div>
-    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHê-doubt-toggle aria-pressed="false" title="Marcar dêÂºvida neste têÂ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t4-p1">Modelos fechados podem ajudar a manter o setup local: revisar docker-compose, explicar erro de porta, ajustar scripts e sugerir rollback.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-1-t4-p1">Modelos fechados podem ajudar a manter o setup local: revisar docker-compose, explicar erro de porta, ajustar scripts e sugerir rollback.</p>
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">âŒ˜</span> Registro operacional</h3>
+  <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê¢ÅË</span> Registro operacional</h3>
   <pre class="bg-dark-700/50 rounded-lg p-4 overflow-x-auto text-sm font-mono text-neutral-300"><code>modelo: candidato-local
 modulo: 4-1
-tarefa: resumo, extraÃ§Ã£o, triagem
+tarefa: resumo, extraêÂ§êÂ£o, triagem
 criterios:
-  qualidade: aceitÃ¡vel para rascunho interno
-  privacidade: roda no laboratÃ³rio local
+  qualidade: aceitêÂ¡vel para rascunho interno
+  privacidade: roda no laboratêÂ³rio local
   rollback: voltar ao modelo anterior
 logs:
   - comando executado
-  - erro reproduzÃ­vel
-  - versÃ£o e quantizaÃ§Ã£o</code></pre>
+  - erro reproduzêÂ­vel
+  - versêÂ£o e quantizaêÂ§êÂ£o</code></pre>
 </div>
   <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m4-1-t4-p2">A funÃ§Ã£o do assistente Ã© acelerar manutenÃ§Ã£o, nÃ£o virar ponto Ãºnico de falha. Ele recomenda; vocÃª aplica em ambiente controlado.</p>
+    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê¢ââ </span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHê-block="m4-1-t4-p2">A funêÂ§êÂ£o do assistente êÂ© acelerar manutenêÂ§êÂ£o, nêÂ£o virar ponto êÂºnico de falha. Ele recomenda; vocêÂª aplica em ambiente controlado.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Logs para Codex</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Patch pequeno</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Rollback</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Runbook</span></li>
+      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Logs para Codex</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Patch pequeno</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Rollback</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Runbook</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
-  <p class="text-neutral-300">Cole logs completos no assistente fechado quando pedir ajuda. Sem versÃ£o, comando e erro, o diagnÃ³stico vira chute.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢ÅÂ¦</span> Dica prêÂ¡tica</h3>
+  <p class="text-neutral-300">Cole logs completos no assistente fechado quando pedir ajuda. Sem versêÂ£o, comando e erro, o diagnêÂ³stico vira chute.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Logs para Codex</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Patch pequeno</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Rollback</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Runbook</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
-      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
-      <span data-ARCKHÉ-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHê-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
+      <span class="ARCKHê-read-icon" aria-hidden="true">ê¢ââ¹</span>
+      <span data-ARCKHê-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-5" data-ARCKHÉ-topic="modulo-4-1#topico-5" class="topic-section mb-16">
+<section id="topico-5" data-ARCKHê-topic="modulo-4-1#topico-5" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
-      <h2 class="text-2xl font-bold">ðŸ” Crie rotinas de backup</h2>
+      <h2 class="text-2xl font-bold">ê°Å¸âÂ Crie rotinas de backup</h2>
     </div>
-    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHê-doubt-toggle aria-pressed="false" title="Marcar dêÂºvida neste têÂ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t5-p1">Modelos podem ser baixados de novo, mas configuraÃ§Ãµes, prompts, bases vetoriais, workflows e histÃ³ricos importantes precisam de backup.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-1-t5-p1">Modelos podem ser baixados de novo, mas configuraêÂ§êÂµes, prompts, bases vetoriais, workflows e histêÂ³ricos importantes precisam de backup.</p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
   <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-    <h4 class="font-bold text-emerald-400 mb-4">âœ“ O que FAZER</h4>
+    <h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ O que FAZER</h4>
     <ul class="space-y-3 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Testar com tarefas reais antes de escolher ferramenta.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Registrar modelo, versÃ£o, quantizaÃ§Ã£o e motivo da decisÃ£o.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Separar dados sensÃ­veis de prompts que podem sair da mÃ¡quina.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Testar com tarefas reais antes de escolher ferramenta.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Registrar modelo, versêÂ£o, quantizaêÂ§êÂ£o e motivo da decisêÂ£o.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Separar dados sensêÂ­veis de prompts que podem sair da mêÂ¡quina.</span></li>
     </ul>
   </div>
   <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-    <h4 class="font-bold text-red-400 mb-4">âœ— O que NAO fazer</h4>
+    <h4 class="font-bold text-red-400 mb-4">ê¢Åâ O que NAO fazer</h4>
     <ul class="space-y-3 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Trocar de stack sÃ³ porque um ranking novo apareceu.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Confundir estado tem valor com uma regra universal.</span></li>
-      <li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Rodar automaÃ§Ãµes sem logs, rollback e limite de escopo.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Trocar de stack sêÂ³ porque um ranking novo apareceu.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Confundir estado tem valor com uma regra universal.</span></li>
+      <li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Rodar automaêÂ§êÂµes sem logs, rollback e limite de escopo.</span></li>
     </ul>
   </div>
 </div>
   <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m4-1-t5-p2">Separe o que Ã© cache do que Ã© patrimÃ´nio. FaÃ§a exportaÃ§Ãµes periÃ³dicas e mantenha um caminho de restauraÃ§Ã£o testado.</p>
+    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê¢ââ </span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHê-block="m4-1-t5-p2">Separe o que êÂ© cache do que êÂ© patrimêÂ´nio. FaêÂ§a exportaêÂ§êÂµes periêÂ³dicas e mantenha um caminho de restauraêÂ§êÂ£o testado.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>ConfiguraÃ§Ã£o</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Workflows</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Bases vetoriais</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>RestauraÃ§Ã£o</span></li>
+      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>ConfiguraêÂ§êÂ£o</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Workflows</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Bases vetoriais</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>RestauraêÂ§êÂ£o</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
-  <p class="text-neutral-300">AutomaÃ§Ã£o boa tem entrada estruturada, saÃ­da esperada e um caminho claro para falhar sem causar dano.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢ÅÂ¦</span> Dica prêÂ¡tica</h3>
+  <p class="text-neutral-300">AutomaêÂ§êÂ£o boa tem entrada estruturada, saêÂ­da esperada e um caminho claro para falhar sem causar dano.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">ConfiguraÃ§Ã£o</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">ConfiguraêÂ§êÂ£o</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Workflows</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Bases vetoriais</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">RestauraÃ§Ã£o</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">RestauraêÂ§êÂ£o</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 </div>
   
   <div class="flex justify-start mt-6">
-    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
-      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
-      <span data-ARCKHÉ-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHê-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
+      <span class="ARCKHê-read-icon" aria-hidden="true">ê¢ââ¹</span>
+      <span data-ARCKHê-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
-<section id="topico-6" data-ARCKHÉ-topic="modulo-4-1#topico-6" class="topic-section mb-16">
+<section id="topico-6" data-ARCKHê-topic="modulo-4-1#topico-6" class="topic-section mb-16">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div class="flex items-center space-x-4">
       <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
-      <h2 class="text-2xl font-bold">âœ… Defina quando subir de nÃ­vel</h2>
+      <h2 class="text-2xl font-bold">ê¢Åâ¦ Defina quando subir de nêÂ­vel</h2>
     </div>
-    <button type="button" data-ARCKHÉ-doubt-toggle aria-pressed="false" title="Marcar dÃºvida neste tÃ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
+    <button type="button" data-ARCKHê-doubt-toggle aria-pressed="false" title="Marcar dêÂºvida neste têÂ³pico" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm">
       <span aria-hidden="true">?</span>
       <span>Tenho duvida</span>
     </button>
   </div>
-  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t6-p1">SÃ³ invista em hardware, cluster, GPU dedicada ou serviÃ§os gerenciados quando houver carga real, ganho mensurÃ¡vel e clareza de manutenÃ§Ã£o.</p>
+  <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-1-t6-p1">SêÂ³ invista em hardware, cluster, GPU dedicada ou serviêÂ§os gerenciados quando houver carga real, ganho mensurêÂ¡vel e clareza de manutenêÂ§êÂ£o.</p>
   <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">â–¦</span> MÃ©trica Ãºtil</h3>
+  <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">ê¢âÂ¦</span> MêÂ©trica êÂºtil</h3>
   <ul class="space-y-2 text-neutral-300">
-    <li><strong>LatÃªncia:</strong> tempo atÃ© a primeira resposta e tempo total.</li>
-    <li><strong>MemÃ³ria:</strong> quanto o modelo consome carregado e em contexto longo.</li>
-    <li><strong>Qualidade:</strong> taxa de respostas aceitÃ¡veis no seu benchmark.</li>
-    <li><strong>ManutenÃ§Ã£o:</strong> quantas vezes vocÃª precisa intervir para manter o fluxo.</li>
+    <li><strong>LatêÂªncia:</strong> tempo atêÂ© a primeira resposta e tempo total.</li>
+    <li><strong>MemêÂ³ria:</strong> quanto o modelo consome carregado e em contexto longo.</li>
+    <li><strong>Qualidade:</strong> taxa de respostas aceitêÂ¡veis no seu benchmark.</li>
+    <li><strong>ManutenêÂ§êÂ£o:</strong> quantas vezes vocêÂª precisa intervir para manter o fluxo.</li>
   </ul>
 </div>
   <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">â—†</span> Conceito principal</h3>
-    <p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m4-1-t6-p2">A maturidade vem em degraus: laptop, mÃ¡quina dedicada, acesso remoto, automaÃ§Ãµes estÃ¡veis, observabilidade e sÃ³ entÃ£o escala.</p>
+    <h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê¢ââ </span> Conceito principal</h3>
+    <p class="text-neutral-300 mb-4" data-ARCKHê-block="m4-1-t6-p2">A maturidade vem em degraus: laptop, mêÂ¡quina dedicada, acesso remoto, automaêÂ§êÂµes estêÂ¡veis, observabilidade e sêÂ³ entêÂ£o escala.</p>
     <ul class="space-y-2 text-neutral-300">
-      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Degraus</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Carga real</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Ganho mensurÃ¡vel</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>ManutenÃ§Ã£o</span></li>
+      <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Degraus</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Carga real</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Ganho mensurêÂ¡vel</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>ManutenêÂ§êÂ£o</span></li>
     </ul>
   </div>
   <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ¦</span> Dica prÃ¡tica</h3>
-  <p class="text-neutral-300">O melhor setup Ã© aquele que vocÃª consegue explicar, atualizar e restaurar em uma tarde.</p>
+  <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢ÅÂ¦</span> Dica prêÂ¡tica</h3>
+  <p class="text-neutral-300">O melhor setup êÂ© aquele que vocêÂª consegue explicar, atualizar e restaurar em uma tarde.</p>
 </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
   <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Degraus</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
     <div class="text-amber-400 font-semibold mb-1">Carga real</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">Ganho mensurÃ¡vel</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">Ganho mensurêÂ¡vel</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
-    <div class="text-amber-400 font-semibold mb-1">ManutenÃ§Ã£o</div>
-    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisÃ£o.</p>
+    <div class="text-amber-400 font-semibold mb-1">ManutenêÂ§êÂ£o</div>
+    <p class="text-sm text-neutral-400">Conceito para revisar na sua matriz de decisêÂ£o.</p>
   </div>
 </div>
-  <div data-ARCKHÉ-check="modulo-4-1#q1" class="ARCKHÉ-check">
-  <p class="ARCKHÉ-check__q">Qual Ã© o critÃ©rio mais importante antes de investir em hardware dedicado?</p>
-  <div class="ARCKHÉ-check__options space-y-2">
-    <button type="button" class="ARCKHÉ-check__option" data-ARCKHÉ-check-option="0">Comprar a mÃ¡quina mais potente possÃ­vel.</button>
-    <button type="button" class="ARCKHÉ-check__option" data-ARCKHÉ-check-option="1">Validar tarefa, carga real e ganho mensurÃ¡vel.</button>
-    <button type="button" class="ARCKHÉ-check__option" data-ARCKHÉ-check-option="2">Trocar de modelo sempre que surgir um ranking novo.</button>
+  <div data-ARCKHê-check="modulo-4-1#q1" class="ARCKHê-check">
+  <p class="ARCKHê-check__q">Qual êÂ© o critêÂ©rio mais importante antes de investir em hardware dedicado?</p>
+  <div class="ARCKHê-check__options space-y-2">
+    <button type="button" class="ARCKHê-check__option" data-ARCKHê-check-option="0">Comprar a mêÂ¡quina mais potente possêÂ­vel.</button>
+    <button type="button" class="ARCKHê-check__option" data-ARCKHê-check-option="1">Validar tarefa, carga real e ganho mensurêÂ¡vel.</button>
+    <button type="button" class="ARCKHê-check__option" data-ARCKHê-check-option="2">Trocar de modelo sempre que surgir um ranking novo.</button>
   </div>
-  <p class="ARCKHÉ-check-feedback mt-4 text-sm" role="status" aria-live="polite"></p>
+  <p class="ARCKHê-check-feedback mt-4 text-sm" role="status" aria-live="polite"></p>
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-    ARCKHÉ.registerCheck('modulo-4-1#q1', {
-      q: 'Qual Ã© o critÃ©rio mais importante antes de investir em hardware dedicado?',
-      options: ['Comprar a mÃ¡quina mais potente possÃ­vel.', 'Validar tarefa, carga real e ganho mensurÃ¡vel.', 'Trocar por ranking.'],
+  if (window.ARCKHê && ARCKHê.registerCheck) {
+    ARCKHê.registerCheck('modulo-4-1#q1', {
+      q: 'Qual êÂ© o critêÂ©rio mais importante antes de investir em hardware dedicado?',
+      options: ['Comprar a mêÂ¡quina mais potente possêÂ­vel.', 'Validar tarefa, carga real e ganho mensurêÂ¡vel.', 'Trocar por ranking.'],
       answer: '1',
       explain: {
-        '0': 'PotÃªncia sem caso de uso vira custo fixo.',
+        '0': 'PotêÂªncia sem caso de uso vira custo fixo.',
         '1': 'Isso. A escala precisa seguir uso observado e valor claro.',
-        '2': 'Ranking ajuda a descobrir candidatos, mas nÃ£o substitui teste operacional.'
+        '2': 'Ranking ajuda a descobrir candidatos, mas nêÂ£o substitui teste operacional.'
       }
     });
   }
 });
 </script>
   <div class="flex justify-start mt-6">
-    <button type="button" data-ARCKHÉ-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
-      <span class="ARCKHÉ-read-icon" aria-hidden="true">â—‹</span>
-      <span data-ARCKHÉ-read-label>Marcar como lido</span>
+    <button type="button" data-ARCKHê-read-toggle aria-pressed="false" class="inline-flex justify-start items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
+      <span class="ARCKHê-read-icon" aria-hidden="true">ê¢ââ¹</span>
+      <span data-ARCKHê-read-label>Marcar como lido</span>
     </button>
   </div>
 </section>
       <section class="mb-12">
   <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-    <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do Modulo</h2>
+    <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumo do Modulo</h2>
     <div class="space-y-4 mb-8">
-      <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Escolha hardware pelo gargalo</strong><span class="text-neutral-400"> - MemÃ³ria manda muito</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Acesse com Tailscale</strong><span class="text-neutral-400"> - Remoto sem expor</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Monitore antes de otimizar</strong><span class="text-neutral-400"> - Logs primeiro</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Use Codex como mantenedor</strong><span class="text-neutral-400"> - Debug assistido</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Crie rotinas de backup</strong><span class="text-neutral-400"> - Estado tem valor</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Defina quando subir de nÃ­vel</strong><span class="text-neutral-400"> - Escala com critÃ©rio</span></div></div>
+      <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Escolha hardware pelo gargalo</strong><span class="text-neutral-400"> - MemêÂ³ria manda muito</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Acesse com Tailscale</strong><span class="text-neutral-400"> - Remoto sem expor</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Monitore antes de otimizar</strong><span class="text-neutral-400"> - Logs primeiro</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Use Codex como mantenedor</strong><span class="text-neutral-400"> - Debug assistido</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Crie rotinas de backup</strong><span class="text-neutral-400"> - Estado tem valor</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Defina quando subir de nêÂ­vel</strong><span class="text-neutral-400"> - Escala com critêÂ©rio</span></div></div>
     </div>
     <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
       <h3 class="font-semibold text-amber-400 mb-2">Proximo Modulo:</h3>
-      <p class="text-neutral-300">Curso concluÃ­do</p>
+      <p class="text-neutral-300">Curso concluêÂ­do</p>
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
       <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">Voltar para Trilha</a>
-      <a href="../../index.html" class="flex-1 text-center px-6 py-3 bg-amber-500/20 border border-amber-500/30 text-amber-400 rounded-lg font-semibold hover:bg-amber-500/30 transition-colors">Voltar ao inÃ­cio</a>
+      <a href="../../index.html" class="flex-1 text-center px-6 py-3 bg-amber-500/20 border border-amber-500/30 text-amber-400 rounded-lg font-semibold hover:bg-amber-500/30 transition-colors">Voltar ao inêÂ­cio</a>
     </div>
   </div>
 </section>
     </div>
-    <nav data-ARCKHÉ-toc aria-label="Indice da pagina" class="hidden lg:block sticky top-24 self-start">
-  <p class="ARCKHÉ-toc-progress"><span data-ARCKHÉ-section-counter>Secao 1 de 6</span></p>
+    <nav data-ARCKHê-toc aria-label="Indice da pagina" class="hidden lg:block sticky top-24 self-start">
+  <p class="ARCKHê-toc-progress"><span data-ARCKHê-section-counter>Secao 1 de 6</span></p>
   <ul class="space-y-1">
     <li><a href="#topico-1">1. Escolha hardware pelo gargalo</a></li>
 <li><a href="#topico-2">2. Acesse com Tailscale</a></li>
 <li><a href="#topico-3">3. Monitore antes de otimizar</a></li>
 <li><a href="#topico-4">4. Use Codex como mantenedor</a></li>
 <li><a href="#topico-5">5. Crie rotinas de backup</a></li>
-<li><a href="#topico-6">6. Defina quando subir de nÃ­vel</a></li>
+<li><a href="#topico-6">6. Defina quando subir de nêÂ­vel</a></li>
   </ul>
 </nav>
   </article>
@@ -891,7 +891,7 @@ function toggleTopic(button) {
   var panelId = button.getAttribute('aria-controls');
   var explanation = panelId ? document.getElementById(panelId) : null;
   if (!explanation) return;
-  var moduleCard = button.closest('[data-ARCKHÉ-module]') || button.closest('.module-shell') || document;
+  var moduleCard = button.closest('[data-ARCKHê-module]') || button.closest('.module-shell') || document;
   moduleCard.querySelectorAll('.topic-explanation.active').forEach(function (exp) {
     if (exp !== explanation) {
       exp.classList.remove('active');
@@ -924,24 +924,24 @@ document.addEventListener('keydown', function (e) {
 </script>
 <script src="../../assets/learn.js"></script>
 <script>
-if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
-  window.ARCKHÉ.init();
+if (window.ARCKHê && typeof window.ARCKHê.init === 'function') {
+  window.ARCKHê.init();
 }
 document.addEventListener('click', function (e) {
   var t = e.target;
   if (!t || !t.closest) return;
   var nav = t.closest('nav');
   if (!nav) return;
-  var journey = t.closest('[data-ARCKHÉ-journey-open]');
-  if (journey && window.ARCKHÉ && ARCKHÉ.openJourney) {
+  var journey = t.closest('[data-ARCKHê-journey-open]');
+  if (journey && window.ARCKHê && ARCKHê.openJourney) {
     e.preventDefault();
-    ARCKHÉ.openJourney();
+    ARCKHê.openJourney();
     return;
   }
-  var toggle = t.closest('[data-ARCKHÉ-appearance-toggle]');
+  var toggle = t.closest('[data-ARCKHê-appearance-toggle]');
   if (toggle) {
-    var targetSel = toggle.getAttribute('data-ARCKHÉ-appearance-toggle');
-    var panel = targetSel ? document.querySelector(targetSel) : document.querySelector('[data-ARCKHÉ-appearance]');
+    var targetSel = toggle.getAttribute('data-ARCKHê-appearance-toggle');
+    var panel = targetSel ? document.querySelector(targetSel) : document.querySelector('[data-ARCKHê-appearance]');
     if (panel) {
       var open = panel.getAttribute('data-open') !== 'true';
       panel.setAttribute('data-open', open ? 'true' : 'false');
@@ -950,29 +950,29 @@ document.addEventListener('click', function (e) {
     return;
   }
   var pairs = [
-    ['data-ARCKHÉ-set-theme', 'theme'],
-    ['data-ARCKHÉ-set-font', 'font'],
-    ['data-ARCKHÉ-set-fontscale', 'fontScale'],
-    ['data-ARCKHÉ-set-linewidth', 'lineWidth'],
-    ['data-ARCKHÉ-set-leading', 'leading'],
-    ['data-ARCKHÉ-set-accent', 'accent']
+    ['data-ARCKHê-set-theme', 'theme'],
+    ['data-ARCKHê-set-font', 'font'],
+    ['data-ARCKHê-set-fontscale', 'fontScale'],
+    ['data-ARCKHê-set-linewidth', 'lineWidth'],
+    ['data-ARCKHê-set-leading', 'leading'],
+    ['data-ARCKHê-set-accent', 'accent']
   ];
   for (var i = 0; i < pairs.length; i++) {
     var btn = t.closest('[' + pairs[i][0] + ']');
-    if (btn && window.ARCKHÉ && ARCKHÉ.setPref) {
+    if (btn && window.ARCKHê && ARCKHê.setPref) {
       var raw = btn.getAttribute(pairs[i][0]);
       var key = pairs[i][1];
       var value = key === 'fontScale' || key === 'lineWidth' ? parseInt(raw, 10) : (key === 'leading' ? parseFloat(raw) : raw);
-      ARCKHÉ.setPref(key, value);
+      ARCKHê.setPref(key, value);
       return;
     }
   }
   var theme = t.closest('#theme-toggle');
   if (theme) {
     var html = document.documentElement;
-    var next = html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark';
-    if (window.ARCKHÉ && ARCKHÉ.setPref) {
-      ARCKHÉ.setPref('theme', next);
+    var next = html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark';
+    if (window.ARCKHê && ARCKHê.setPref) {
+      ARCKHê.setPref('theme', next);
     } else {
       html.classList.toggle('dark');
       localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
